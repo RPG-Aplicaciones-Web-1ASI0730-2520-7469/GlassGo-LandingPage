@@ -3,6 +3,10 @@
     "title": "GlassGo - Glass Transport Software",
     "language": "en"
   },
+  "notifications": {
+    "terms_accepted": "Terms and conditions accepted",
+    "terms_rejected": "You must accept the terms and conditions to continue"
+  },
   "navigation": {
     "home": "Home",
     "about": "About Us",
@@ -12,7 +16,9 @@
     "tutorials": "Tutorials",
     "contact": "Contact",
     "login": "Log In",
-    "register": "Sign Up"
+    "register": "Sign Up",
+    "team": "Team",
+    "about_team": "About the Team"
   },
   "hero": {
     "title": "Software designed for traceability and<br>loss prevention in glass transportation",
@@ -36,6 +42,43 @@
         "title": "Mission and Vision",
         "description": "We revolutionize glass transportation with accessible, safe and efficient technology, creating a new standard without breakage and with total transparency."
       }
+    }
+  },
+  "team": {
+    "title": "Development Team",
+    "subtitle": "Meet the team building GlassGo with technology, passion, and a customer-first mindset.",
+    "members": {
+      "1": {
+        "name": "Ever Carlos",
+        "career": "Software Engineer"
+      },
+      "2": {
+        "name": "Guillermo Howard",
+        "career": "Software Engineer"
+      },
+      "3": {
+        "name": "David Vivar",
+        "career": "Software Engineer"
+      },
+      "4": {
+        "name": "Dylan Guillen",
+        "career": "Software Engineer"
+      },
+      "5": {
+        "name": "Gerardo Palacin",
+        "career": "Software Engineer"
+      },
+      "6": {
+        "name": "Abraam Acosta",
+        "career": "Software Engineer"
+      }
+    },
+    "about_video": {
+      "title": "About the Team",
+      "subtitle": "Coming soon: a look at how we work, our engineering practices, and our culture.",
+      "badge": "Coming soon",
+      "cta": "Video available soon",
+      "note": "We are preparing the video for our YouTube channel. Check back soon!"
     }
   },
   "benefits": {
@@ -158,9 +201,14 @@
     }
   },
   "footer": {
-    "description": "These are the characteristics that differentiate our solution: accessible technology, focused on your business and ready to boost your growth.",
-    "social_title": "Social Networks",
+    "description": "These are the features that set our solution apart: accessible technology, focused on your business and ready to drive your growth.",
+    "social_title": "Social Media",
     "services_title": "Services",
+    "legal_title": "Legal Information",
+    "legal": {
+      "contact": "Contact",
+      "terms": "Terms and Conditions"
+    }, 
     "services": {
       "about": "About Us",
       "benefits": "Benefits",
@@ -168,9 +216,71 @@
       "faq": "FAQ",
       "tutorials": "Tutorials",
       "contact": "Contact",
-      "download": "Download"
+      "download": "Download",
+      "terms": "Terms and Conditions"
     },
-    "copyright": "All rights reserved © 2025 GlassGo"
+    "copyright": "All rights reserved © 2025 GlassGo",
+    "terms": "Terms and Conditions"
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "section1": {
+      "title": "1. Acceptance of Terms",
+      "content": "By accessing and using GlassGo services, you fully accept these terms and conditions. It is important that you read this document carefully before using our services."
+    },
+    "section2": {
+      "title": "2. Service Description",
+      "content": "GlassGo provides software for glass transport management and traceability. Our services include, but are not limited to:",
+      "list": [
+        "Real-time shipment tracking",
+        "Impact and vibration monitoring",
+        "Route optimization",
+        "Report generation and analysis",
+        "Fleet and driver management"
+      ]
+    },
+    "section3": {
+      "title": "3. User Responsibilities",
+      "content": "The user agrees to:",
+      "list": [
+        "Provide accurate and up-to-date information",
+        "Maintain credential confidentiality",
+        "Use the service ethically and legally",
+        "Report any unauthorized account use",
+        "Comply with all applicable laws and regulations"
+      ]
+    },
+    "section4": {
+      "title": "4. Privacy and Data Protection",
+      "content": "We are committed to protecting your privacy and personal data. Our practices include:",
+      "list": [
+        "Encryption of sensitive data",
+        "Secure storage on protected servers",
+        "Restricted access to authorized personnel",
+        "Compliance with data protection regulations"
+      ]
+    },
+    "section5": {
+      "title": "5. Limitation of Liability",
+      "content": "GlassGo will not be liable for:",
+      "list": [
+        "Losses not directly attributable to our breach",
+        "Indirect or consequential damages",
+        "Temporary service interruptions for maintenance",
+        "Force majeure or circumstances beyond our control"
+      ]
+    },
+    "section6": {
+      "title": "6. Fees and Payments",
+      "content": "Details about pricing, billing, and payments are specified in our subscription plans. We reserve the right to modify fees with prior notice."
+    },
+    "section7": {
+      "title": "7. Cancellation and Termination",
+      "content": "You may cancel your subscription at any time. We reserve the right to suspend or terminate the service in case of violation of these terms."
+    },
+    "legal_notice": "The information provided in this document is for informational purposes only and does not constitute legal advice. For any specific inquiries, we recommend consulting with a legal professional.", 
+    "accept_button": "Accept All",
+    "decline_button": "Do Not Accept"
   },
   "language": {
     "current": "English",
