@@ -1,7 +1,38 @@
-// Navigation and Page Functionality for GlassGo
+/**
+ * GlassGo Landing Page - Main JavaScript
+ * Handles navigation, animations, carousel, forms and interactive features
+ * @author GlassGo Development Team
+ * @version 1.0.0
+ * @description Main script for GlassGo landing page with modular initialization
+ */
 
+/**
+ * Main initialization - Executed when DOM is fully loaded
+ * Sets up all page functionality including navigation, carousels, forms, and modals
+ */
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for navigation links
+    initNavigation();
+    initScrollTracking();
+    initHeroButtons();
+    initAuthButtons();
+    initCardEffects();
+    initHeaderScroll();
+    initMobileMenu();
+    initTestimonialsCarousel();
+    initFAQ();
+    initTutorialSection();
+    initContactForm();
+    initFooterFunctionality();
+    initTermsModal();
+    initContactModal();
+    initScrollAnimations();
+});
+
+/**
+ * Initialize smooth scrolling navigation
+ * Handles click events on navigation links and provides smooth scroll to sections
+ */
+function initNavigation() {
     const navLinks = document.querySelectorAll('.nav-link');
     
     navLinks.forEach(link => {
@@ -20,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Special handling for inicio - scroll to top
             if (targetId === 'inicio') {
                 window.scrollTo({
-                    top: 0,
+                    top: 0, 
                     behavior: 'smooth'
                 });
                 return;
@@ -29,7 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetSection = document.getElementById(targetId);
             
             if (targetSection) {
-                // Smooth scroll to section
                 targetSection.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
@@ -37,70 +67,85 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+}
     
-    // Update active navigation link on scroll
+/**
+ * Initialize scroll tracking for active navigation highlighting
+ * Updates active nav link based on current scroll position
+ */
+function initScrollTracking() {
     const sections = document.querySelectorAll('section, main');
+    const navLinks = document.querySelectorAll('.nav-link');
     
     window.addEventListener('scroll', function() {
-        let current = '';
+        let currentSection = '';
         
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
             
             if (scrollY >= (sectionTop - 200)) {
-                current = section.getAttribute('id');
+                currentSection = section.getAttribute('id');
             }
         });
         
         navLinks.forEach(link => {
             link.classList.remove('active');
-            if (link.getAttribute('href').substring(1) === current) {
+            if (link.getAttribute('href').substring(1) === currentSection) {
                 link.classList.add('active');
             }
         });
     });
+}
+
+/**
+ * Initialize hero section buttons
+ * Connects primary and secondary CTA buttons to their target sections
+ */
+function initHeroButtons() {
+    const primaryBtn = document.querySelector('.btn-primary');
+    const secondaryBtn = document.querySelector('.btn-secondary');
     
-    // Hero buttons functionality
-    const btnPrimary = document.querySelector('.btn-primary');
-    const btnSecondary = document.querySelector('.btn-secondary');
-    
-    if (btnPrimary) {
-        btnPrimary.addEventListener('click', function() {
-            // Scroll to pricing section (when implemented)
-            console.log('Ver planes y precios clicked');
-            // You can implement this later when you add pricing section
+    if (primaryBtn) {
+        primaryBtn.addEventListener('click', function() {
+            scrollToSection('faq');
         });
     }
     
-    if (btnSecondary) {
-        btnSecondary.addEventListener('click', function() {
-            // Open demo modal or redirect to demo page
-            console.log('Obtener demostración clicked');
-            // You can implement this later
+    if (secondaryBtn) {
+        secondaryBtn.addEventListener('click', function() {
+            scrollToSection('contacto');
+        });
+    }
+}
+    
+/**
+ * Initialize authentication buttons (login and register)
+ * Sets up click handlers for auth buttons in header
+ */
+function initAuthButtons() {
+    const loginBtn = document.querySelector('.btn-login');
+    const registerBtn = document.querySelector('.btn-register');
+    
+    if (loginBtn) {
+        loginBtn.addEventListener('click', function() {
+            window.location.href = '/login';
         });
     }
     
-    // Login and Register buttons
-    const btnLogin = document.querySelector('.btn-login');
-    const btnRegister = document.querySelector('.btn-register');
-    
-    if (btnLogin) {
-        btnLogin.addEventListener('click', function() {
-            console.log('Iniciar sesión clicked');
-            // Implement login functionality
+    if (registerBtn) {
+        registerBtn.addEventListener('click', function() {
+            window.location.href = '/register';
         });
     }
+}
     
-    if (btnRegister) {
-        btnRegister.addEventListener('click', function() {
-            console.log('Registrarse clicked');
-            // Implement register functionality
-        });
-    }
-    
-    // Card hover effects (additional animations)
-    const cards = document.querySelectorAll('.nosotros-card');
+/**
+ * Initialize card hover effects
+ * Adds transform animations to nosotros cards on mouse enter/leave
+ */
+function initCardEffects() {
+    const cards = document.querySelectorAll('.about-card');
     
     cards.forEach(card => {
         card.addEventListener('mouseenter', function() {
@@ -111,8 +156,13 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = 'translateY(0) scale(1)';
         });
     });
-    
-    // Header background change on scroll
+}
+
+/**
+ * Initialize header background change on scroll
+ * Adjusts header opacity and blur based on scroll position
+ */
+function initHeaderScroll() {
     const header = document.querySelector('.header');
     
     window.addEventListener('scroll', function() {
@@ -124,21 +174,17 @@ document.addEventListener('DOMContentLoaded', function() {
             header.style.backdropFilter = 'blur(10px)';
         }
     });
+}
+
+/**
+ * Initialize mobile menu
+ * Creates hamburger menu for responsive navigation
+ */
+function initMobileMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    if (!navMenu) return;
     
-    // Language selector functionality
-    const languageSelector = document.querySelector('.language-selector');
-    
-    if (languageSelector) {
-        languageSelector.addEventListener('click', function() {
-            console.log('Language selector clicked');
-            // Implement language switching functionality
-        });
-    }
-    
-    // Mobile menu toggle (for future responsive implementation)
-    const createMobileMenu = () => {
-        const navMenu = document.querySelector('.nav-menu');
-        const hamburger = document.createElement('button');
+    const hamburger = document.createElement('button');
         hamburger.className = 'hamburger-menu';
         hamburger.innerHTML = '☰';
         hamburger.style.display = 'none';
@@ -164,14 +210,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         window.addEventListener('resize', checkScreenSize);
         checkScreenSize();
-    };
+}
     
-    // Initialize mobile menu
-    createMobileMenu();
-    
-    // Testimonios Carousel Functionality - Enhanced Version
-    const testimoniosCarousel = () => {
-        const carousel = document.querySelector('.testimonios-carousel');
+    // Testimonials Carousel Functionality - Enhanced Version
+    const testimonialsCarousel = () => {
+        const carousel = document.querySelector('.testimonials-carousel');
         const cards = document.querySelectorAll('.testimonio-card');
         const indicators = document.querySelectorAll('.indicator');
         const prevBtn = document.querySelector('.carousel-nav.prev');
@@ -364,8 +407,8 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     
     // Initialize testimonios carousel
-    if (document.querySelector('.testimonios-carousel')) {
-        testimoniosCarousel();
+    if (document.querySelector('.testimonials-carousel')) {
+        testimonialsCarousel();
     }
     
     // FAQ Accordion Functionality
@@ -378,7 +421,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const faqItem = faqItems[index];
                 const isActive = faqItem.classList.contains('active');
                 
-                // Cerrar todas las preguntas
+                // Cerrar todas las questions
                 faqItems.forEach(item => {
                     item.classList.remove('active');
                     const questionBtn = item.querySelector('.faq-question');
@@ -435,15 +478,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const verMasBtn = document.querySelector('.btn-ver-mas');
         if (verMasBtn) {
             verMasBtn.addEventListener('click', () => {
-                console.log('Ver más preguntas clicked');
-                // Aquí puedes implementar la funcionalidad para mostrar más preguntas
-                // Por ejemplo, cargar más preguntas dinámicamente o redirigir a una página completa de FAQ
+                console.log('Ver más questions clicked');
+                // Aquí puedes implementar la funcionalidad para mostrar más questions
+                // Por ejemplo, cargar más questions dinámicamente o redirigir a una página completa de FAQ
             });
         }
     };
     
     // Initialize FAQ
-    if (document.querySelector('.preguntas')) {
+    if (document.querySelector('.faq')) {
         initFAQ();
     }
     
@@ -740,14 +783,15 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Initialize scroll to top button
         createScrollToTop();
-    };
+}
+
+/**
+ * Initialize scroll animations using Intersection Observer
+ * Animates cards when they come into viewport
+ */
+function initScrollAnimations() {
+    const cards = document.querySelectorAll('.about-card');
     
-    // Initialize Footer
-    if (document.querySelector('.footer')) {
-        initFooter();
-    }
-    
-    // Intersection Observer for animations
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -769,9 +813,11 @@ document.addEventListener('DOMContentLoaded', function() {
         card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(card);
     });
-});
+}
 
-// Utility functions
+/**
+ * Utility function to scroll to top of page
+ */
 const scrollToTop = () => {
     window.scrollTo({
         top: 0,

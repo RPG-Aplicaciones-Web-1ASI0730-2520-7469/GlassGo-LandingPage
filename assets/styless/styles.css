@@ -1,10 +1,45 @@
-/* Reset and base styles */
+/**
+ * GlassGo Landing Page - Main Stylesheet
+ * @description Comprehensive styles for GlassGo landing page
+ * @author GlassGo Development Team
+ * @version 1.0.0
+ * 
+ * Table of Contents:
+ * 1. Reset & Base Styles
+ * 2. Notifications & Alerts
+ * 3. Header & Navigation
+ * 4. Hero Section
+ * 5. About Section (nosotros)
+ * 6. Team Section
+ * 7. Benefits Section
+ * 8. Testimonials Section
+ * 9. FAQ Section
+ * 10. Tutorials Section
+ * 11. Contact Section
+ * 12. Footer
+ * 13. Modals
+ * 14. Responsive Design
+ * 15. Animations
+ */
+
+/* ==========================================================================
+   1. Reset & Base Styles
+   ========================================================================== */
+
+/**
+ * Universal box-sizing reset
+ * Ensures consistent box model across all elements
+ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/**
+ * Base body styles
+ * Sets default font family, line height and colors
+ */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
@@ -12,7 +47,14 @@ body {
     overflow-x: hidden;
 }
 
-/* Terms Notifications */
+/* ==========================================================================
+   2. Notifications & Alerts
+   ========================================================================== */
+
+/**
+ * Terms acceptance notifications
+ * Fixed position notifications for terms acceptance/rejection
+ */
 .terms-confirmation,
 .terms-error {
     position: fixed;
@@ -26,11 +68,13 @@ body {
     z-index: 9999;
 }
 
+/** Success notification style */
 .terms-confirmation {
     background: rgba(16, 185, 129, 0.15);
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
+/** Error notification style */
 .terms-error {
     background: rgba(229, 62, 62, 0.15);
     border: 1px solid rgba(229, 62, 62, 0.3);
@@ -52,6 +96,10 @@ body {
     color: #c53030;
 }
 
+/**
+ * Slide-in animation from right
+ * Used for notification entries
+ */
 @keyframes slideIn {
     from {
         transform: translateX(100%);
@@ -63,7 +111,14 @@ body {
     }
 }
 
-/* Header Styles */
+/* ==========================================================================
+   3. Header & Navigation
+   ========================================================================== */
+
+/**
+ * Main header component
+ * Fixed position with glassmorphism effect
+ */
 .header {
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
@@ -76,6 +131,10 @@ body {
     padding: 0.5rem 0;
 }
 
+/**
+ * Navigation container
+ * Flexbox layout for header content
+ */
 .nav-container {
     max-width: 100%;
     margin: 0;
@@ -87,6 +146,10 @@ body {
     width: 100%;
 }
 
+/**
+ * Logo container
+ * Groups logo image and brand text
+ */
 .nav-logo {
     display: flex;
     align-items: center;
@@ -95,6 +158,10 @@ body {
     margin-left: 0;
 }
 
+/**
+ * Logo image
+ * Fixed height with auto width for aspect ratio
+ */
 .logo {
     height: 60px;
     width: auto;
@@ -287,6 +354,10 @@ body {
     animation: spin 1s linear infinite;
 }
 
+/**
+ * Spinner animation
+ * Used for loading states
+ */
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -304,6 +375,10 @@ body {
     flex-shrink: 0;
 }
 
+/**
+ * Authentication buttons (login and register)
+ * Minimal design with hover effects
+ */
 .btn-login,
 .btn-register {
     background: none;
@@ -343,7 +418,15 @@ body {
     padding: 0.2rem;
 }
 
-/* Hero Section */
+/* ==========================================================================
+   4. Hero Section
+   ========================================================================== */
+
+/**
+ * Hero section
+ * Full viewport height with background image and gradient overlay
+ * Fixed attachment creates parallax effect
+ */
 .hero {
     min-height: 100vh;
     background: linear-gradient(135deg, 
@@ -361,6 +444,10 @@ body {
     overflow: hidden;
 }
 
+/**
+ * Hero overlay
+ * Dark overlay to improve text readability
+ */
 .hero::before {
     content: '';
     position: absolute;
@@ -540,27 +627,35 @@ body {
     }
 }
 
-/* Nosotros Section */
-.nosotros {
+/* ==========================================================================
+   5. About Section (nosotros)
+   ========================================================================== */
+
+/**
+ * About section
+ * Introduces the company and value proposition
+ * Note: "nosotros" means "about us" in Spanish - class name maintained for HTML compatibility
+ */
+.about {
     padding: 5rem 0;
     background: #f8f9fa;
 }
 
-.nosotros-container {
+.about-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
     text-align: center;
 }
 
-.nosotros-title {
+.about-title {
     font-size: 3rem;
     font-weight: 700;
     color: #1a365d;
     margin-bottom: 2rem;
 }
 
-.nosotros-subtitle {
+.about-subtitle {
     font-size: 1.2rem;
     color: #4a5568;
     line-height: 1.6;
@@ -569,14 +664,14 @@ body {
     text-align: center;
 }
 
-.nosotros-cards {
+.about-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
 }
 
-.nosotros-card {
+.about-card {
     background: white;
     padding: 2.5rem 2rem;
     border-radius: 15px;
@@ -585,7 +680,7 @@ body {
     border: 2px solid transparent;
 }
 
-.nosotros-card:hover {
+.about-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(43, 108, 176, 0.15);
     border-color: #2b6cb0;
@@ -615,53 +710,61 @@ body {
     text-align: justify;
 }
 
-/* ===== Development Team ===== */
-.equipo { padding: 80px 0; background: #1a365d; color: #e5e7eb; }
-.equipo-container { width: min(1200px, 92%); margin: 0 auto; }
-.equipo-title { font-size: 3rem; font-weight: 700; margin-bottom: 10px; }
-.equipo-subtitle { color: #a3aab8; margin-bottom: 32px; }
+/* ==========================================================================
+   6. Team Section
+   ========================================================================== */
 
-.equipo-grid {
+/**
+ * Development team section
+ * Showcases team members with photos and roles
+ */
+/* ===== Development Team ===== */
+.team { padding: 80px 0; background: #1a365d; color: #e5e7eb; }
+.team-container { width: min(1200px, 92%); margin: 0 auto; }
+.team-title { font-size: 3rem; font-weight: 700; margin-bottom: 10px; }
+.team-subtitle { color: #a3aab8; margin-bottom: 32px; }
+
+.team-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
 }
 @media (max-width: 1100px) {
-  .equipo-grid { grid-template-columns: repeat(3, 1fr); }
+  .team-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 768px) {
-  .equipo-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 520px) {
-  .equipo-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr; }
 }
 
-.equipo-card {
+.team-card {
   background: #12151d;
   border: 1px solid rgba(255,255,255,0.06);
   border-radius: 16px;
   padding: 18px;
   transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 }
-.equipo-card:hover {
+.team-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(0,0,0,0.35);
   border-color: rgba(93, 156, 255, 0.35);
 }
 
-.equipo-avatar { aspect-ratio: 1/1; overflow: hidden; border-radius: 12px; background: #0f1218; }
-.equipo-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.team-avatar { aspect-ratio: 1/1; overflow: hidden; border-radius: 12px; background: #0f1218; }
+.team-img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-.equipo-name { margin-top: 14px; font-size: 1.1rem; font-weight: 600; }
-.equipo-career { margin-top: 2px; color: #8ea6ff; font-weight: 500; }
-.equipo-bio { margin-top: 8px; color: #b8c1d6; font-size: .95rem; line-height: 1.5; }
+.team-name { margin-top: 14px; font-size: 1.1rem; font-weight: 600; }
+.team-career { margin-top: 2px; color: #8ea6ff; font-weight: 500; }
+.team-bio { margin-top: 8px; color: #b8c1d6; font-size: .95rem; line-height: 1.5; }
 
-.equipo-links { margin-top: 12px; display: flex; gap: 12px; flex-wrap: wrap; }
-.equipo-link {
+.team-links { margin-top: 12px; display: flex; gap: 12px; flex-wrap: wrap; }
+.team-link {
   font-size: .9rem; color: #c7d2fe; text-decoration: none;
   border: 1px solid rgba(199,210,254,.25); padding: 6px 10px; border-radius: 10px;
 }
-.equipo-link:hover { border-color: #c7d2fe; }
+.team-link:hover { border-color: #c7d2fe; }
 
 /* ===== About the Team (Video Placeholder) ===== */
 .about-team { padding: 60px 0 90px; background: #1a365d; color: #e5e7eb; }
@@ -699,19 +802,28 @@ body {
 .about-team-note { color: #9aa4ba; margin-top: 14px; }
 
 
+/* ==========================================================================
+   7. Benefits Section
+   ========================================================================== */
+
+/**
+ * Benefits section (beneficios)
+ * Two-column layout showcasing product benefits for different user types
+ * Note: "beneficios" means "benefits" in Spanish - maintained for HTML compatibility
+ */
 /* Beneficios Section */
-.beneficios {
+.benefits {
     padding: 5rem 0;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
-.beneficios-container {
+.benefits-container {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-.beneficios-title {
+.benefits-title {
     font-size: 3rem;
     font-weight: 700;
     color: #1a365d;
@@ -719,7 +831,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.beneficios-subtitle {
+.benefits-subtitle {
     font-size: 1.2rem;
     color: #4a5568;
     line-height: 1.6;
@@ -728,7 +840,7 @@ body {
     margin: 0 auto 4rem auto;
 }
 
-.beneficio-category {
+.benefit-category {
     margin-bottom: 4rem;
 }
 
@@ -744,7 +856,7 @@ body {
     text-decoration-thickness: 3px;
 }
 
-.beneficios-grid {
+.benefits-grid {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
@@ -753,7 +865,7 @@ body {
     overflow-x: auto;
 }
 
-.beneficio-item {
+.benefit-item {
     background: white;
     padding: 1.5rem 1rem;
     border-radius: 12px;
@@ -768,7 +880,7 @@ body {
     max-width: 250px;
 }
 
-.beneficio-item::before {
+.benefit-item::before {
     content: '';
     position: absolute;
     top: 0;
@@ -780,24 +892,24 @@ body {
     transition: transform 0.3s ease;
 }
 
-.beneficio-item:hover {
+.benefit-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(43, 108, 176, 0.15);
     border-color: #2b6cb0;
 }
 
-.beneficio-item:hover::before {
+.benefit-item:hover::before {
     transform: scaleX(1);
 }
 
-.beneficio-icon {
+.benefit-icon {
     margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.beneficio-icon .icon-img {
+.benefit-icon .icon-img {
     width: 48px;
     height: 48px;
     object-fit: contain;
@@ -805,11 +917,11 @@ body {
     transition: transform 0.3s ease;
 }
 
-.beneficio-item:hover .icon-img {
+.benefit-item:hover .icon-img {
     transform: scale(1.1);
 }
 
-.beneficio-title {
+.benefit-title {
     font-size: 0.95rem;
     font-weight: 600;
     color: #1a365d;
@@ -817,17 +929,19 @@ body {
     margin: 0;
 }
 
-/* Responsive Design for Beneficios */
+/* Responsive Design for Beneficios (Benefits)
+ * Adjusts grid layout and card sizes for smaller screens
+ */
 @media (max-width: 768px) {
-    .beneficios {
+    .benefits {
         padding: 3rem 0;
     }
     
-    .beneficios-title {
+    .benefits-title {
         font-size: 2.5rem;
     }
     
-    .beneficios-subtitle {
+    .benefits-subtitle {
         font-size: 1.1rem;
         margin-bottom: 3rem;
     }
@@ -837,29 +951,29 @@ body {
         margin-bottom: 2rem;
     }
     
-    .beneficios-grid {
+    .benefits-grid {
         flex-direction: column;
         gap: 1.2rem;
     }
     
-    .beneficio-item {
+    .benefit-item {
         padding: 1.5rem 1rem;
         max-width: none;
         min-width: auto;
     }
     
-    .beneficio-icon .icon-img {
+    .benefit-icon .icon-img {
         width: 40px;
         height: 40px;
     }
     
-    .beneficio-title {
+    .benefit-title {
         font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
-    .beneficios-container {
+    .benefits-container {
         padding: 0 1rem;
     }
     
@@ -868,20 +982,29 @@ body {
         line-height: 1.3;
     }
     
-    .beneficio-item {
+    .benefit-item {
         padding: 1.2rem 0.8rem;
     }
 }
 
+/* ==========================================================================
+   8. Testimonials Section
+   ========================================================================== */
+
+/**
+ * Testimonials section (testimonios)
+ * Carousel showcasing customer reviews and feedback
+ * Note: "testimonios" means "testimonials" in Spanish - maintained for HTML compatibility
+ */
 /* Testimonios Section */
-.testimonios {
+.testimonials {
     padding: 5rem 0;
     background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
     position: relative;
     overflow: hidden;
 }
 
-.testimonios::before {
+.testimonials::before {
     content: '';
     position: absolute;
     top: 0;
@@ -892,7 +1015,7 @@ body {
     opacity: 0.3;
 }
 
-.testimonios::after {
+.testimonials::after {
     content: '';
     position: absolute;
     top: 0;
@@ -924,7 +1047,7 @@ body {
     }
 }
 
-.testimonios-container {
+.testimonials-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
@@ -932,7 +1055,7 @@ body {
     z-index: 2;
 }
 
-.testimonios-title {
+.testimonials-title {
     font-size: 3rem;
     font-weight: 700;
     color: white;
@@ -941,20 +1064,20 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.testimonios-carousel {
+.testimonials-carousel {
     position: relative;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.testimonios-wrapper {
+.testimonials-wrapper {
     position: relative;
     height: 400px;
     overflow: hidden;
     perspective: 1000px;
 }
 
-.testimonio-card {
+.testimonial-card {
     position: absolute;
     top: 0;
     left: 0;
@@ -972,7 +1095,7 @@ body {
     z-index: 1;
 }
 
-.testimonio-card.active {
+.testimonial-card.active {
     opacity: 1;
     transform: translateX(0) scale(1) rotateY(0deg);
     border-color: #3182ce;
@@ -980,26 +1103,26 @@ body {
     z-index: 10;
 }
 
-.testimonio-card.prev {
+.testimonial-card.prev {
     opacity: 0.3;
     transform: translateX(-120px) scale(0.85) rotateY(-15deg);
     z-index: 5;
 }
 
-.testimonio-card.next {
+.testimonial-card.next {
     opacity: 0.3;
     transform: translateX(120px) scale(0.85) rotateY(15deg);
     z-index: 5;
 }
 
-.testimonio-avatar {
+.testimonial-avatar {
     margin-bottom: 1.5rem;
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-.testimonio-avatar::before {
+.testimonial-avatar::before {
     content: '';
     position: absolute;
     top: -8px;
@@ -1016,7 +1139,7 @@ body {
     transition: opacity 0.5s ease;
 }
 
-.testimonio-card.active .testimonio-avatar::before {
+.testimonial-card.active .testimonial-avatar::before {
     opacity: 1;
 }
 
@@ -1037,12 +1160,12 @@ body {
     z-index: 2;
 }
 
-.testimonio-card.active .avatar-img {
+.testimonial-card.active .avatar-img {
     transform: scale(1.05);
     box-shadow: 0 8px 25px rgba(49, 130, 206, 0.5);
 }
 
-.testimonio-name {
+.testimonial-name {
     font-size: 1.5rem;
     font-weight: 700;
     color: #1a365d;
@@ -1052,12 +1175,12 @@ body {
     transition: all 0.6s ease 0.2s;
 }
 
-.testimonio-card.active .testimonio-name {
+.testimonial-card.active .testimonial-name {
     transform: translateY(0);
     opacity: 1;
 }
 
-.testimonio-role {
+.testimonial-role {
     font-size: 1rem;
     color: #3182ce;
     font-weight: 600;
@@ -1069,12 +1192,12 @@ body {
     transition: all 0.6s ease 0.3s;
 }
 
-.testimonio-card.active .testimonio-role {
+.testimonial-card.active .testimonial-role {
     transform: translateY(0);
     opacity: 1;
 }
 
-.testimonio-text {
+.testimonial-text {
     font-size: 1.1rem;
     color: #4a5568;
     line-height: 1.6;
@@ -1086,12 +1209,12 @@ body {
     transition: all 0.6s ease 0.4s;
 }
 
-.testimonio-card.active .testimonio-text {
+.testimonial-card.active .testimonial-text {
     transform: translateY(0);
     opacity: 1;
 }
 
-.testimonio-text::before {
+.testimonial-text::before {
     content: '"';
     font-size: 4rem;
     color: #e2e8f0;
@@ -1103,7 +1226,7 @@ body {
     transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s;
 }
 
-.testimonio-text::after {
+.testimonial-text::after {
     content: '"';
     font-size: 4rem;
     color: #e2e8f0;
@@ -1115,13 +1238,16 @@ body {
     transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.7s;
 }
 
-.testimonio-card.active .testimonio-text::before,
-.testimonio-card.active .testimonio-text::after {
+.testimonial-card.active .testimonial-text::before,
+.testimonial-card.active .testimonial-text::after {
     transform: scale(1);
 }
 
-/* Efecto de pulsación sutil en el card activo */
-.testimonio-card.active {
+/**
+ * Subtle pulsing effect on active testimonial card
+ * Creates breathing animation with shadow
+ */
+.testimonial-card.active {
     animation: subtlePulse 4s ease-in-out infinite;
 }
 
@@ -1208,7 +1334,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.testimonios-carousel:hover .carousel-nav {
+.testimonials-carousel:hover .carousel-nav {
     opacity: 1;
     visibility: visible;
 }
@@ -1252,27 +1378,29 @@ body {
     margin-left: 2px;
 }
 
-/* Responsive Design for Testimonios */
+/* Responsive Design for Testimonios (Testimonials)
+ * Stacks testimonials vertically and adjusts carousel controls
+ */
 @media (max-width: 768px) {
-    .testimonios {
+    .testimonials {
         padding: 3rem 0;
     }
     
-    .testimonios-title {
+    .testimonials-title {
         font-size: 2.5rem;
     }
     
-    .testimonios-wrapper {
+    .testimonials-wrapper {
         height: auto;
         min-height: 350px;
     }
     
-    .testimonio-card {
+    .testimonial-card {
         padding: 2rem 1.5rem;
         position: relative;
     }
     
-    .testimonio-card.active {
+    .testimonial-card.active {
         position: relative;
     }
     
@@ -1281,54 +1409,63 @@ body {
         height: 60px;
     }
     
-    .testimonio-name {
+    .testimonial-name {
         font-size: 1.3rem;
     }
     
-    .testimonio-text {
+    .testimonial-text {
         font-size: 1rem;
         padding: 0 0.5rem;
     }
     
-    .testimonio-text::before,
-    .testimonio-text::after {
+    .testimonial-text::before,
+    .testimonial-text::after {
         font-size: 3rem;
     }
 }
 
 @media (max-width: 480px) {
-    .testimonios-container {
+    .testimonials-container {
         padding: 0 1rem;
     }
     
-    .testimonio-card {
+    .testimonial-card {
         padding: 1.5rem 1rem;
     }
     
-    .testimonio-text::before {
+    .testimonial-text::before {
         top: -0.5rem;
         left: -0.3rem;
     }
     
-    .testimonio-text::after {
+    .testimonial-text::after {
         bottom: -1.5rem;
         right: -0.3rem;
     }
 }
 
+/* ==========================================================================
+   9. FAQ Section  
+   ========================================================================== */
+
+/**
+ * Frequently Asked Questions section (preguntas)
+ * Accordion-style FAQ with expandable questions
+ * Note: "preguntas" means "questions" in Spanish - maintained for HTML compatibility
+ */
 /* Preguntas Frecuentes Section */
-.preguntas {
+.faq {
     padding: 5rem 0;
     background: #f8f9fa;
 }
 
-.preguntas-container {
+.faq-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-.preguntas-title {
+.faq-title {
     font-size: 3rem;
     font-weight: 700;
     color: #1a365d;
@@ -1336,7 +1473,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.preguntas-subtitle {
+.faq-subtitle {
     font-size: 1.1rem;
     color: #4a5568;
     text-align: center;
@@ -1516,17 +1653,19 @@ body {
     transform: translateX(3px);
 }
 
-/* Responsive Design for Preguntas */
+/* Responsive Design for Preguntas (FAQ)
+ * Optimizes FAQ layout and typography for mobile devices
+ */
 @media (max-width: 768px) {
-    .preguntas {
+    .faq {
         padding: 3rem 0;
     }
     
-    .preguntas-title {
+    .faq-title {
         font-size: 2.5rem;
     }
     
-    .preguntas-container {
+    .faq-container {
         padding: 0 1rem;
     }
     
@@ -1547,7 +1686,7 @@ body {
 }
 
 @media (max-width: 480px) {
-    .preguntas-title {
+    .faq-title {
         font-size: 2rem;
     }
     
@@ -1561,6 +1700,14 @@ body {
     }
 }
 
+/* ==========================================================================
+   10. Tutorials Section
+   ========================================================================== */
+
+/**
+ * Tutorials section
+ * Grid of tutorial cards with hover effects
+ */
 /* Tutorial Section */
 .tutorial {
     padding: 5rem 0;
@@ -1609,7 +1756,7 @@ body {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 0.6s ease forwards;
-    min-width: 0; /* Permite que las tarjetas se compriman */
+    min-width: 0; /* Allows cards to shrink */
 }
 
 .tutorial-card:nth-child(1) { animation-delay: 0.1s; }
@@ -1695,7 +1842,9 @@ body {
     margin-bottom: 0;
 }
 
-/* Responsive Design for Tutorial */
+/* Responsive Design for Tutorial
+ * Converts tutorial steps to single column and adjusts video player
+ */
 @media (max-width: 768px) {
     .tutorial {
         padding: 3rem 0;
@@ -1775,6 +1924,15 @@ body {
     }
 }
 
+/* ==========================================================================
+   11. Contact Section
+   ========================================================================== */
+
+/**
+ * Contact section (contacto)
+ * Contact form with validation and social media links
+ * Note: "contacto" means "contact" in Spanish - maintained for HTML compatibility
+ */
 /* Contacto Section */
 .contacto {
     padding: 5rem 0;
@@ -1794,7 +1952,10 @@ body {
     align-items: start;
 }
 
-/* Información de contacto */
+/**
+ * Contact information section
+ * Left column with company details and social links
+ */
 .contacto-info {
     padding: 2rem 0;
 }
@@ -1885,7 +2046,10 @@ body {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Formulario de contacto */
+/**
+ * Contact form section
+ * Right column with input fields and submit button
+ */
 .contacto-form {
     background: white;
     border-radius: 16px;
@@ -1995,7 +2159,9 @@ body {
     transform: translateY(0);
 }
 
-/* Responsive Design for Contacto */
+/* Responsive Design for Contacto (Contact)
+ * Stacks contact form and info vertically for mobile
+ */
 @media (max-width: 968px) {
     .contacto-content {
         grid-template-columns: 1fr;
@@ -2077,6 +2243,14 @@ body {
     }
 }
 
+/* ==========================================================================
+   12. Footer
+   ========================================================================== */
+
+/**
+ * Footer section
+ * Multi-column layout with links, social media, and copyright
+ */
 /* Footer Section */
 .footer {
     background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
@@ -2257,7 +2431,14 @@ button.footer-link:focus {
     outline-offset: 2px;
 }
 
-/* Terms Modal */
+/* ==========================================================================
+   11. Terms Modal
+   ========================================================================== */
+/**
+ * Terms and conditions modal overlay
+ * Displays legal information in a centered modal window
+ * Features: backdrop overlay, smooth transitions, scrollable content
+ */
 .terms-modal {
     display: none;
     position: fixed;
@@ -2488,7 +2669,13 @@ button.footer-link:focus {
         }
     }
 
-/* Modal Contact Form */
+/* ==========================================================================
+   12. Modal Contact Form
+   ========================================================================== */
+/**
+ * Contact form inside modal dialogs
+ * Alternative contact form layout for modal contexts
+ */
 .modal-contact-form {
     margin-top: 2rem;
     padding-top: 1.5rem;
@@ -2528,7 +2715,9 @@ button.footer-link:focus {
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* Responsive Design for Footer */
+/* Responsive Design for Footer
+ * Simplifies footer layout for smaller screens
+ */
 @media (max-width: 768px) {
     .footer {
         padding: 2rem 0 0 0;
@@ -2601,27 +2790,36 @@ button.footer-link:focus {
     }
 }
 
-/* Responsive Design for Nosotros */
+/* ==========================================================================
+   13. Responsive Design
+   ========================================================================== */
+/**
+ * Media queries for responsive layouts
+ * Breakpoints: 768px (tablet), 480px (mobile)
+ * Sections: About, Benefits, Testimonials, FAQ, Tutorial, Contact, Footer
+ */
+
+/* Responsive Design for Nosotros (About) */
 @media (max-width: 768px) {
-    .nosotros {
+    .about {
         padding: 3rem 0;
     }
     
-    .nosotros-title {
+    .about-title {
         font-size: 2.5rem;
     }
     
-    .nosotros-subtitle {
+    .about-subtitle {
         font-size: 1.1rem;
         margin-bottom: 3rem;
     }
     
-    .nosotros-cards {
+    .about-cards {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
     
-    .nosotros-card {
+    .about-card {
         padding: 2rem 1.5rem;
     }
     
