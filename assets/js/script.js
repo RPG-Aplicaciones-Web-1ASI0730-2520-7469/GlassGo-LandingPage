@@ -212,10 +212,13 @@ function initMobileMenu() {
         checkScreenSize();
 }
     
-    // Testimonials Carousel Functionality - Enhanced Version
+    /**
+     * Testimonials Carousel Functionality
+     * @description Manages the testimonials carousel with auto-play, navigation, and touch support
+     */
     const testimonialsCarousel = () => {
         const carousel = document.querySelector('.testimonials-carousel');
-        const cards = document.querySelectorAll('.testimonio-card');
+        const cards = document.querySelectorAll('.testimonial-card');
         const indicators = document.querySelectorAll('.indicator');
         const prevBtn = document.querySelector('.carousel-nav.prev');
         const nextBtn = document.querySelector('.carousel-nav.next');
@@ -405,11 +408,16 @@ function initMobileMenu() {
         carousel.setAttribute('tabindex', '0');
         carousel.setAttribute('aria-label', 'Carousel de testimonios. Use las flechas del teclado para navegar');
     };
-    
-    // Initialize testimonios carousel
-    if (document.querySelector('.testimonials-carousel')) {
-        testimonialsCarousel();
-    }
+
+    /**
+     * Initialize Testimonials Carousel
+     * @description Initializes the testimonials carousel if the element exists in the DOM
+     */
+    const initTestimonialsCarousel = () => {
+        if (document.querySelector('.testimonials-carousel')) {
+            testimonialsCarousel();
+        }
+    };
     
     // FAQ Accordion Functionality
     const initFAQ = () => {
