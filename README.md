@@ -1,183 +1,258 @@
-# GlassGo Business Website
+# GlassGo - Business Web Application
 
-Business website for GlassGo, a technology platform designed to transform glass container transportation through real-time traceability, route optimization, and smart sensors for safe and efficient deliveries.
+## 📋 Description
 
-## About the Project
+GlassGo is a comprehensive web platform for glass transportation tracking and logistics management. This repository contains the static landing page and business owner dashboard, developed with HTML, CSS, and JavaScript. The platform serves as the entry point for users and stakeholders interested in the product.
 
-This is the official business website for GlassGo, developed by Team RPG as part of our university software engineering project. The platform addresses critical challenges in the logistics industry, specifically focusing on reducing losses and improving transparency in glass transportation.
+## 🎯 Purpose
 
-## Team RPG
+This web application focuses on:
+- **First Impression**: Professional landing page showcasing the platform's value proposition
+- **User Onboarding**: Authentication system for new and existing users
+- **Dashboard Management**: Complete business owner dashboard for order and inventory management
+- **Multi-language Support**: Full i18n implementation for Spanish and English
 
-We are a group of software engineering students committed to building innovative solutions for real-world problems. GlassGo represents our vision for modernizing the glass transportation industry through accessible and efficient technology.
-
-**Team Members:**
-- Ever Carlos - Software Engineer
-- Guillermo Howard - Software Engineer
-- David Vivar - Software Engineer
-- Dylan Guillen - Software Engineer
-- Gerardo Palacin - Software Engineer
-- Abraam Acosta - Software Engineer
-
-## Technologies Used
-
-### Frontend
-- **HTML5** - Semantic markup and structure
-- **CSS3** - Custom styling with responsive design
-- **Vanilla JavaScript** - Core functionality and interactions
-
-### Features Implementation
-- **Intersection Observer API** - Scroll-based animations
-- **CSS Grid & Flexbox** - Modern layout system
-- **Custom i18n System** - Bilingual support (Spanish/English)
-- **Event Delegation** - Efficient event handling
-- **Touch Events API** - Mobile gesture support
-
-### Development Standards
-- **JSDoc** - Complete code documentation
-- **BEM-like Naming** - Organized CSS architecture
-- **Modular JavaScript** - Separated concerns and reusable functions
-- **Responsive Design** - Mobile-first approach
-
-## Project Structure
+## 🏗️ Project Structure
 
 ```
-GlassGo-LandingPage/
-├── index.html
-├── assets/
-│   ├── i18n/
-│   │   ├── en.json
-│   │   ├── es.json
-│   │   └── i18n.js
-│   ├── images/
-│   ├── js/
-│   │   └── script.js
-│   └── styless/
-│       └── styles.css
-└── README.md
+Open-Business-Web-Page/
+├── index.html                 # Main landing page
+├── sign-in.html              # User authentication page
+├── sign-up.html              # New user registration page
+├── README.md                 # Project documentation
+│
+├── assets/                   # Static resources
+│   ├── i18n/                # Internationalization resources
+│   │   ├── en.json          # English translations
+│   │   ├── es.json          # Spanish translations
+│   │   └── i18n.js          # i18n implementation
+│   │
+│   ├── images/              # Image resources
+│   │   ├── logo.png         # GlassGo logo
+│   │   ├── tracking.png     # Tracking illustration
+│   │   ├── welcome.png      # Welcome screen
+│   │   └── [team photos]    # Team member images
+│   │
+│   ├── js/                  # JavaScript resources
+│   │   ├── script.js        # Landing page functionality
+│   │   └── sign.js          # Authentication logic
+│   │
+│   └── styles/              # CSS stylesheets
+│       ├── styles.css       # Landing page styles
+│       └── sign.css         # Authentication page styles
+│
+└── dueno-negocio/           # Business owner dashboard
+    ├── home.html            # Dashboard home
+    ├── create-order.html    # Order creation
+    ├── tracking.html        # Real-time tracking
+    ├── inventory.html       # Inventory management
+    ├── calendar.html        # Delivery calendar
+    ├── report.html          # Analytics & reports
+    ├── history.html         # Order history
+    ├── claims.html          # Claims management
+    │
+    ├── js/                  # Dashboard JavaScript resources
+    │   ├── common.js        # Shared functionality
+    │   ├── home.js          # Home page logic
+    │   ├── create-order.js  # Order creation logic
+    │   ├── tracking.js      # Tracking functionality
+    │   ├── inventory.js     # Inventory management
+    │   ├── calendar.js      # Calendar logic
+    │   ├── report.js        # Report generation
+    │   ├── history.js       # History view logic
+    │   └── claims.js        # Claims handling
+    │
+    └── styles/              # Dashboard stylesheets
+        ├── common.css       # Shared styles (sidebar, layout)
+        ├── home.css         # Home page styles
+        ├── create-order.css # Order form styles
+        ├── tracking.css     # Tracking page styles
+        ├── inventory.css    # Inventory styles
+        ├── calendar.css     # Calendar styles
+        ├── report.css       # Report page styles
+        ├── history.css      # History page styles
+        └── claims.css       # Claims page styles
 ```
 
-## Features
+## 🌟 Key Features
 
-### Core Functionality
-- Smooth scroll navigation with active section tracking
-- Interactive testimonials carousel with auto-play
-- Accordion-style FAQ section
-- Responsive mobile menu
-- Contact form with validation
-- Terms and conditions modal
+### Landing Page
+- **Hero Section**: Main value proposition and CTAs
+- **About Section**: Company mission, vision, and value proposition
+- **Development Team**: Team member profiles with social links
+- **Benefits**: Feature showcase for different user types
+- **Testimonials**: Customer testimonial carousel
+- **FAQ**: Expandable frequently asked questions
+- **Tutorials**: Video tutorial placeholders
 
-### Internationalization
-- Bilingual support (Spanish and English)
-- Dynamic language switching
-- Persistent language preference
-- Fallback translation system
+### Authentication System
+- **Sign In**: User login with user type selection (Business Owner, Distributor, Transport Company)
+- **Sign Up**: New user registration with social auth options (Google, Facebook, Apple)
+- **Password Recovery**: Forgot password modal with email resource
 
-### User Experience
-- Scroll-triggered animations
-- Hover effects and transitions
-- Keyboard navigation support
-- Touch/swipe support for mobile
-- Loading indicators
-- Accessibility features
+### Business Owner Dashboard
+- **Home**: Overview with statistics, active orders, and tracking
+- **Create Order**: Multi-step order creation form
+- **Tracking**: Real-time GPS tracking with order status
+- **Inventory**: Stock management and product catalog
+- **Calendar**: Delivery schedule and event management
+- **Reports**: Analytics dashboard with bar charts
+- **History**: Searchable order history archive
+- **Claims**: Incident reporting and claim submission
 
-## Getting Started
+## 🌐 Internationalization (i18n)
+
+The application uses a custom i18n system with language resources stored in JSON format:
+
+- **Supported Languages**: Spanish (default), English
+- **Resource Files**: `assets/i18n/en.json`, `assets/i18n/es.json`
+- **Implementation**: `assets/i18n/i18n.js`
+- **Storage**: User preference saved in browser localStorage
+- **Coverage**: All pages and dashboard sections
+
+### Using i18n
+
+```html
+<!-- Text content -->
+<h1 data-i18n="hero.title">Default text</h1>
+
+<!-- Placeholders -->
+<input placeholder="Email" data-i18n-placeholder="auth.signin.emailPlaceholder">
+
+<!-- HTML content -->
+<p data-i18n="about.description" data-i18n-html="true">HTML content</p>
+```
+
+## 📦 Resources & Data Management
+
+The application uses various resource types:
+
+### Static Resources
+- **Images**: Logo, illustrations, team photos, icons
+- **Fonts**: Google Fonts (Inter family)
+- **Icons**: SVG icons, Flaticon resources
+
+### Dynamic Resources
+- **User Data**: Authentication credentials, user preferences
+- **Order Data**: Active orders, tracking information, order history
+- **Inventory Data**: Stock levels, product catalog
+- **Analytics Data**: Performance metrics, reports
+- **Calendar Data**: Scheduled deliveries, events
+- **Claims Data**: Incident reports, claim records
+
+### Language Resources
+- **Translation Files**: JSON-based localization
+- **Language Preference**: Stored in localStorage
+- **Dynamic Loading**: i18n.js handles resource loading
+
+## 🎨 Styling & Design
+
+- **Design System**: Custom CSS with consistent color palette
+- **Primary Color**: #003049 (Navy Blue)
+- **Accent Color**: #D62828 (Red)
+- **Typography**: Inter font family
+- **Responsive**: Mobile-first approach
+- **Components**: Reusable UI components across dashboard
+
+## 🚀 Getting Started
 
 ### Prerequisites
 - Modern web browser (Chrome, Firefox, Safari, Edge)
-- Local web server (optional, for development)
+- No build process required - pure HTML/CSS/JS
 
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/RPG-Aplicaciones-Web-1ASI0730-2520-7469/GlassGo-LandingPage.git
+git clone https://github.com/your-org/Open-Business-Web-Page.git
+cd Open-Business-Web-Page
 ```
 
-2. Navigate to the project directory:
+2. Open in browser:
 ```bash
-cd GlassGo-LandingPage
+# Simply open index.html in your browser
+# Or use a deploy server (recommended):
+https://rpg2-0-opensource-1asi0729-2520-7327.github.io/GlassGo-Business-Web-page/
 ```
 
-3. Open with a local server or directly in browser:
-```bash
-# Option 1: Using Python
-python -m http.server 8000
+### Development
 
-# Option 2: Using Node.js
-npx http-server
+- No compilation needed
+- Edit HTML/CSS/JS files directly
+- Refresh browser to see changes
+- Use browser DevTools for debugging
 
-# Option 3: Open directly
-open index.html
-```
+## 📱 User Flow
 
-4. Access in browser:
-```
-http://localhost:8000
-```
+1. **Landing Page** (`index.html`)
+   - View features and benefits
+   - Read testimonials and FAQ
+   - Choose Sign In or Sign Up
 
-## Usage
+2. **Authentication** (`sign-in.html` or `sign-up.html`)
+   - Select user type
+   - Enter credentials
+   - Access dashboard
 
-### Navigation
-The business website includes the following sections:
-- **Home** - Hero section with call-to-action buttons
-- **About Us** - Information about GlassGo platform
-- **Team** - Development team profiles
-- **Benefits** - Value proposition for different user types
-- **Testimonials** - Customer feedback carousel
-- **FAQ** - Frequently asked questions
-- **Tutorials** - Platform feature guides
-- **Contact** - Contact form and social media links
+3. **Dashboard** (`dueno-negocio/`)
+   - View home overview
+   - Create orders
+   - Track shipments
+   - Manage inventory
+   - Generate reports
+   - Review history
+   - Submit claims
 
-### Language Switching
-Click the language selector in the header to switch between Spanish and English. The preference is saved in browser storage.
+## 🔐 User Types
 
-## Code Documentation
+The application supports three user types:
+- **Business Owners**: Full dashboard access
+- **Distributors**: Order and tracking access
+- **Transport Companies**: Delivery and route management
 
-All JavaScript functions are documented using JSDoc standards with:
-- Function descriptions
-- Parameter types and descriptions
-- Return value specifications
-- Usage examples where applicable
+## 📊 Dashboard Features
 
-All CSS sections include:
-- Section headers
-- Purpose descriptions
-- Responsive breakpoints
-- Animation specifications
+### Statistics Cards
+- Active orders count
+- Available stock levels
+- Estimated delivery times
+- Losses avoided metrics
 
-## Browser Support
+### Order Tracking
+- Real-time GPS tracking
+- Order status updates
+- Tracking number lookup
+- Delivery timeline
+
+### Reports & Analytics
+- Bar chart visualizations
+- Performance metrics
+- Custom report generation
+- Export functionality
+
+## 🌍 Browser Support
 
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
 
-## Performance
+## 👥 Development Team
 
-- Pure vanilla JavaScript (no framework overhead)
-- Optimized CSS with minimal reflows
-- Lazy-loaded animations
-- Efficient event delegation
-- Minimal external dependencies
+- **Ever Carlos** - Software Engineer
+- **Guillermo Howard** - Software Engineer
+- **David Vivar** - Software Engineer
+- **Dylan Guillen** - Software Engineer
 
-## Contributing
+## 📄 License
 
-This is a university project developed by Team RPG. For any questions or suggestions, please contact the team members.
+This project is part of the GlassGo platform.
 
-## License
+## 📞 Contact
 
-This project is developed as part of university coursework. All rights reserved by Team RPG.
-
-## Contact
-
-For inquiries about GlassGo or this business website:
-- GitHub: [RPG-Aplicaciones-Web-1ASI0730-2520-7469](https://github.com/RPG-Aplicaciones-Web-1ASI0730-2520-7469)
-
-## Acknowledgments
-
-Special thanks to our university instructors and peers for their guidance and feedback throughout the development of this project.
+For more information about GlassGo, visit our website or contact the development team.
 
 ---
 
-Developed with dedication by Team RPG - Software Engineering Students
+**Note**: This is a static web application. For the full backend API and database resources, refer to the main GlassGo platform repository.
+

@@ -3,7 +3,7 @@
  * @description Comprehensive styles for GlassGo landing page
  * @author GlassGo Development Team
  * @version 1.0.0
- * 
+ *
  * Table of Contents:
  * 1. Reset & Base Styles
  * 2. Notifications & Alerts
@@ -401,6 +401,8 @@ body {
     transition: all 0.3s ease;
     font-size: 0.9rem;
     white-space: nowrap;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn-login:hover {
@@ -415,6 +417,7 @@ body {
 
 .btn-register:hover {
     background: #2c5aa0;
+    color: white;
 }
 
 .language-selector {
@@ -439,11 +442,11 @@ body {
  */
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, 
-        rgba(43, 108, 176, 0.4) 0%, 
-        rgba(26, 54, 93, 0.5) 50%, 
-        rgba(45, 90, 160, 0.4) 100%),
-        url('../images/imagen-camion.jpeg');
+    background: linear-gradient(135deg,
+    rgba(43, 108, 176, 0.4) 0%,
+    rgba(26, 54, 93, 0.5) 50%,
+    rgba(45, 90, 160, 0.4) 100%),
+    url('../images/imagen-camion.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -555,11 +558,11 @@ body {
     .nav-container {
         padding: 0 1.5rem;
     }
-    
+
     .nav-menu {
         gap: 1.5rem;
     }
-    
+
     .hero-title {
         font-size: 3rem;
     }
@@ -569,16 +572,16 @@ body {
     .nav-menu {
         display: none;
     }
-    
+
     .hero-container {
         justify-content: center;
         text-align: center;
     }
-    
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-buttons {
         justify-content: center;
     }
@@ -588,31 +591,31 @@ body {
     .nav-container {
         padding: 0 1rem;
     }
-    
+
     .top-container {
         padding: 0 1rem;
     }
-    
+
     .nav-actions {
         gap: 1rem;
     }
-    
+
     .logo-text {
         font-size: 1.5rem;
     }
-    
+
     .hero {
         padding-top: 140px;
     }
-    
+
     .hero-container {
         padding: 0 1rem;
     }
-    
+
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .btn-primary,
     .btn-secondary {
         padding: 0.8rem 1.5rem;
@@ -624,12 +627,12 @@ body {
     .hero-title {
         font-size: 1.8rem;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .btn-primary,
     .btn-secondary {
         width: 100%;
@@ -735,31 +738,31 @@ body {
 .team-subtitle { color: #a3aab8; margin-bottom: 32px; }
 
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
 }
 @media (max-width: 1100px) {
-  .team-grid { grid-template-columns: repeat(3, 1fr); }
+    .team-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 768px) {
-  .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 520px) {
-  .team-grid { grid-template-columns: 1fr; }
+    .team-grid { grid-template-columns: 1fr; }
 }
 
 .team-card {
-  background: #12151d;
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 16px;
-  padding: 18px;
-  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    background: #12151d;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 16px;
+    padding: 18px;
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 }
 .team-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.35);
-  border-color: rgba(93, 156, 255, 0.35);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+    border-color: rgba(93, 156, 255, 0.35);
 }
 
 .team-avatar { aspect-ratio: 1/1; overflow: hidden; border-radius: 12px; background: #0f1218; }
@@ -771,8 +774,8 @@ body {
 
 .team-links { margin-top: 12px; display: flex; gap: 12px; flex-wrap: wrap; }
 .team-link {
-  font-size: .9rem; color: #c7d2fe; text-decoration: none;
-  border: 1px solid rgba(199,210,254,.25); padding: 6px 10px; border-radius: 10px;
+    font-size: .9rem; color: #c7d2fe; text-decoration: none;
+    border: 1px solid rgba(199,210,254,.25); padding: 6px 10px; border-radius: 10px;
 }
 .team-link:hover { border-color: #c7d2fe; }
 
@@ -791,31 +794,31 @@ body {
 .about-product-note { color: #9aa4ba; margin-top: 14px; }
 
 .video-shell {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 16px;
-  overflow: hidden;
-  background: radial-gradient(80% 80% at 50% 20%, #1b2333, #0f131d);
-  border: 1px solid rgba(255,255,255,0.06);
-  position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    background: radial-gradient(80% 80% at 50% 20%, #1b2333, #0f131d);
+    border: 1px solid rgba(255,255,255,0.06);
+    position: relative;
 }
 .video-placeholder {
-  position: absolute; inset: 0;
-  display: grid; place-items: center;
-  background-image: linear-gradient(135deg, rgba(120,120,120,.06), rgba(255,255,255,.02));
+    position: absolute; inset: 0;
+    display: grid; place-items: center;
+    background-image: linear-gradient(135deg, rgba(120,120,120,.06), rgba(255,255,255,.02));
 }
 .video-badge {
-  position: absolute; top: 14px; left: 14px;
-  font-size: .8rem; letter-spacing: .04em;
-  background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15);
-  padding: 6px 10px; border-radius: 999px; color: #cdd6f4;
+    position: absolute; top: 14px; left: 14px;
+    font-size: .8rem; letter-spacing: .04em;
+    background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15);
+    padding: 6px 10px; border-radius: 999px; color: #cdd6f4;
 }
 .video-cta {
-  cursor: not-allowed;
-  padding: 12px 16px; border-radius: 12px;
-  background: rgba(99,102,241,.15);
-  border: 1px dashed rgba(99,102,241,.45);
-  color: #dbe4ff; font-weight: 600;
+    cursor: not-allowed;
+    padding: 12px 16px; border-radius: 12px;
+    background: rgba(99,102,241,.15);
+    border: 1px dashed rgba(99,102,241,.45);
+    color: #dbe4ff; font-weight: 600;
 }
 
 
@@ -953,37 +956,37 @@ body {
     .benefits {
         padding: 3rem 0;
     }
-    
+
     .benefits-title {
         font-size: 2.5rem;
     }
-    
+
     .benefits-subtitle {
         font-size: 1.1rem;
         margin-bottom: 3rem;
     }
-    
+
     .category-title {
         font-size: 1.5rem;
         margin-bottom: 2rem;
     }
-    
+
     .benefits-grid {
         flex-direction: column;
         gap: 1.2rem;
     }
-    
+
     .benefit-item {
         padding: 1.5rem 1rem;
         max-width: none;
         min-width: auto;
     }
-    
+
     .benefit-icon .icon-img {
         width: 40px;
         height: 40px;
     }
-    
+
     .benefit-title {
         font-size: 1rem;
     }
@@ -993,12 +996,12 @@ body {
     .benefits-container {
         padding: 0 1rem;
     }
-    
+
     .category-title {
         font-size: 1.3rem;
         line-height: 1.3;
     }
-    
+
     .benefit-item {
         padding: 1.2rem 0.8rem;
     }
@@ -1039,28 +1042,28 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
-        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-        radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-        radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-        radial-gradient(circle at 90% 20%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-        radial-gradient(circle at 10% 90%, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-image:
+            radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+            radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+            radial-gradient(circle at 90% 20%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            radial-gradient(circle at 10% 90%, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
     background-size: 200px 200px, 300px 300px, 250px 250px, 180px 180px, 220px 220px;
     animation: floatingParticles 20s ease-in-out infinite;
 }
 
 @keyframes floatingParticles {
-    0%, 100% { 
-        background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; 
+    0%, 100% {
+        background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
     }
-    25% { 
-        background-position: 5% 10%, -5% 15%, 8% -5%, -3% 8%, 10% -8%; 
+    25% {
+        background-position: 5% 10%, -5% 15%, 8% -5%, -3% 8%, 10% -8%;
     }
-    50% { 
-        background-position: 10% 5%, -10% 8%, 15% -10%, -8% 15%, 18% -15%; 
+    50% {
+        background-position: 10% 5%, -10% 8%, 15% -10%, -8% 15%, 18% -15%;
     }
-    75% { 
-        background-position: 8% -5%, -8% 20%, 12% -8%, -12% 10%, 15% -12%; 
+    75% {
+        background-position: 8% -5%, -8% 20%, 12% -8%, -12% 10%, 15% -12%;
     }
 }
 
@@ -1269,10 +1272,10 @@ body {
 }
 
 @keyframes subtlePulse {
-    0%, 100% { 
+    0%, 100% {
         box-shadow: 0 20px 50px rgba(49, 130, 206, 0.25);
     }
-    50% { 
+    50% {
         box-shadow: 0 25px 60px rgba(49, 130, 206, 0.35);
     }
 }
@@ -1402,39 +1405,39 @@ body {
     .testimonials {
         padding: 3rem 0;
     }
-    
+
     .testimonials-title {
         font-size: 2.5rem;
     }
-    
+
     .testimonials-wrapper {
         height: auto;
         min-height: 350px;
     }
-    
+
     .testimonial-card {
         padding: 2rem 1.5rem;
         position: relative;
     }
-    
+
     .testimonial-card.active {
         position: relative;
     }
-    
+
     .avatar-img {
         width: 60px;
         height: 60px;
     }
-    
+
     .testimonial-name {
         font-size: 1.3rem;
     }
-    
+
     .testimonial-text {
         font-size: 1rem;
         padding: 0 0.5rem;
     }
-    
+
     .testimonial-text::before,
     .testimonial-text::after {
         font-size: 3rem;
@@ -1445,16 +1448,16 @@ body {
     .testimonials-container {
         padding: 0 1rem;
     }
-    
+
     .testimonial-card {
         padding: 1.5rem 1rem;
     }
-    
+
     .testimonial-text::before {
         top: -0.5rem;
         left: -0.3rem;
     }
-    
+
     .testimonial-text::after {
         bottom: -1.5rem;
         right: -0.3rem;
@@ -1462,7 +1465,7 @@ body {
 }
 
 /* ==========================================================================
-   9. FAQ Section  
+   9. FAQ Section
    ========================================================================== */
 
 /**
@@ -1677,25 +1680,25 @@ body {
     .faq {
         padding: 3rem 0;
     }
-    
+
     .faq-title {
         font-size: 2.5rem;
     }
-    
+
     .faq-container {
         padding: 0 1rem;
     }
-    
+
     .faq-question {
         padding: 1.2rem 1.5rem;
         font-size: 1rem;
     }
-    
+
     .faq-content {
         padding: 0 1.5rem 1.2rem 1.5rem;
         font-size: 0.95rem;
     }
-    
+
     .faq-icon {
         width: 28px;
         height: 28px;
@@ -1706,12 +1709,12 @@ body {
     .faq-title {
         font-size: 2rem;
     }
-    
+
     .faq-question {
         padding: 1rem 1.2rem;
         font-size: 0.95rem;
     }
-    
+
     .faq-content {
         padding: 0 1.2rem 1rem 1.2rem;
     }
@@ -1866,43 +1869,43 @@ body {
     .tutorial {
         padding: 3rem 0;
     }
-    
+
     .tutorial-title {
         font-size: 2.5rem;
     }
-    
+
     .tutorial-subtitle {
         font-size: 1.1rem;
         margin-bottom: 3rem;
     }
-    
+
     .tutorial-container {
         padding: 0 1rem;
     }
-    
+
     .tutorial-grid {
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
     }
-    
+
     .tutorial-image {
         height: 140px;
     }
-    
+
     .play-button {
         width: 40px;
         height: 40px;
     }
-    
+
     .tutorial-content {
         padding: 1rem 0.8rem;
     }
-    
+
     .tutorial-card-title {
         font-size: 1rem;
         margin-bottom: 0.5rem;
     }
-    
+
     .tutorial-description {
         font-size: 0.85rem;
         margin-bottom: 0;
@@ -1913,28 +1916,28 @@ body {
     .tutorial-title {
         font-size: 2rem;
     }
-    
+
     .tutorial-grid {
         gap: 0.8rem;
     }
-    
+
     .tutorial-image {
         height: 120px;
     }
-    
+
     .play-button {
         width: 35px;
         height: 35px;
     }
-    
+
     .tutorial-content {
         padding: 0.8rem 0.6rem;
     }
-    
+
     .tutorial-card-title {
         font-size: 0.9rem;
     }
-    
+
     .tutorial-description {
         font-size: 0.8rem;
         line-height: 1.4;
@@ -2184,16 +2187,16 @@ body {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    
+
     .contacto-title {
         font-size: 2.5rem;
         text-align: center;
     }
-    
+
     .contacto-description {
         text-align: center;
     }
-    
+
     .redes-sociales {
         justify-content: center;
     }
@@ -2203,28 +2206,28 @@ body {
     .contacto {
         padding: 3rem 0;
     }
-    
+
     .contacto-container {
         padding: 0 1rem;
     }
-    
+
     .contacto-title {
         font-size: 2rem;
     }
-    
+
     .contacto-form {
         padding: 2rem 1.5rem;
     }
-    
+
     .redes-sociales {
         gap: 0.8rem;
     }
-    
+
     .red-social {
         width: 45px;
         height: 45px;
     }
-    
+
     .form-input,
     .form-textarea {
         padding: 0.875rem 1rem;
@@ -2236,25 +2239,25 @@ body {
     .contacto-title {
         font-size: 1.8rem;
     }
-    
+
     .contacto-form {
         padding: 1.5rem 1rem;
     }
-    
+
     .contact-form {
         gap: 1.2rem;
     }
-    
+
     .btn-enviar {
         width: 100%;
         padding: 1rem;
     }
-    
+
     .red-social {
         width: 40px;
         height: 40px;
     }
-    
+
     .redes-sociales {
         gap: 0.6rem;
     }
@@ -2654,37 +2657,37 @@ button.footer-link:focus {
     color: #2d3748;
 }
 
-    @media (max-width: 640px) {
-        .terms-modal-content {
-            padding: 1.5rem;
-            margin: 1rem;
-            font-size: 0.85rem;
-        }
-    
-        .terms-modal h2 {
-            font-size: 1.5rem;
-        }
-    
-        .terms-modal-body h3 {
-            font-size: 1.1rem;
-        }
-    
-        .terms-legal-notice {
-            font-size: 0.75rem;
-        }
-
-        .terms-buttons-container {
-            flex-direction: column;
-            gap: 1rem;
-        }
-    
-        .accept-terms-btn,
-        .decline-terms-btn {
-            width: 100%;
-            max-width: none;
-            padding: 0.7rem 1rem;
-        }
+@media (max-width: 640px) {
+    .terms-modal-content {
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 0.85rem;
     }
+
+    .terms-modal h2 {
+        font-size: 1.5rem;
+    }
+
+    .terms-modal-body h3 {
+        font-size: 1.1rem;
+    }
+
+    .terms-legal-notice {
+        font-size: 0.75rem;
+    }
+
+    .terms-buttons-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .accept-terms-btn,
+    .decline-terms-btn {
+        width: 100%;
+        max-width: none;
+        padding: 0.7rem 1rem;
+    }
+}
 
 /* ==========================================================================
    12. Modal Contact Form
@@ -2739,33 +2742,33 @@ button.footer-link:focus {
     .footer {
         padding: 2rem 0 0 0;
     }
-    
+
     .footer-container {
         padding: 0 1rem;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
     }
-    
+
     .footer-brand {
         align-items: center;
     }
-    
+
     .footer-description {
         max-width: none;
     }
-    
+
     .footer-socials {
         justify-content: center;
     }
-    
+
     .footer-links {
         align-items: center;
     }
-    
+
     .footer-logo-text {
         font-size: 1.8rem;
     }
@@ -2775,33 +2778,33 @@ button.footer-link:focus {
     .footer-content {
         gap: 1.5rem;
     }
-    
+
     .footer-logo-img {
         height: 40px;
     }
-    
+
     .footer-logo-icon {
         width: 40px;
         height: 40px;
     }
-    
+
     .footer-logo-text {
         font-size: 1.5rem;
     }
-    
+
     .footer-description {
         font-size: 0.9rem;
     }
-    
+
     .footer-socials {
         gap: 0.6rem;
     }
-    
+
     .footer-social {
         width: 35px;
         height: 35px;
     }
-    
+
     .footer-link {
         font-size: 0.9rem;
     }
@@ -2821,25 +2824,25 @@ button.footer-link:focus {
     .about {
         padding: 3rem 0;
     }
-    
+
     .about-title {
         font-size: 2.5rem;
     }
-    
+
     .about-subtitle {
         font-size: 1.1rem;
         margin-bottom: 3rem;
     }
-    
+
     .about-cards {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .about-card {
         padding: 2rem 1.5rem;
     }
-    
+
     .icon-img {
         width: 60px;
         height: 60px;

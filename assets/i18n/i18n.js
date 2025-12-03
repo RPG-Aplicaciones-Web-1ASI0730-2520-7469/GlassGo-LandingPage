@@ -19,7 +19,7 @@ class I18n {
         this.translations = {};
         this.supportedLanguages = ['es', 'en'];
         this.fallbackLanguage = 'es';
-        
+
         this.inlineTranslations = {
             'es': {
                 "meta": { "title": "GlassGo - Software para transporte de vidrio", "language": "es" },
@@ -39,6 +39,7 @@ class I18n {
                 "contact": { "title": "Contáctenos", "description": "Escríbenos y juntos impulsaremos tu negocio hacia un transporte sin roturas y con total control", "form": { "subtitle": "Tu opinión y tus necesidades son el punto de partida para crear soluciones efectivas.", "name": "Nombre", "email": "Email", "phone": "Número", "message": "Mensaje", "submit": "Enviar", "sending": "Enviando...", "success": "¡Mensaje enviado con éxito!<br>Te contactaremos pronto.", "errors": { "name": "El nombre debe tener al menos 2 caracteres", "email": "Por favor ingresa un email válido", "phone": "Por favor ingresa un número de teléfono válido", "message": "El mensaje debe tener al menos 10 caracteres", "general": "Error al enviar el mensaje. Por favor intenta de nuevo.", "title": "Por favor corrige los siguientes errores:" } } },
                 "footer": { "description": "Estas son las características que diferencian nuestra solución: tecnología accesible, enfocada en tu negocio y lista para impulsar tu crecimiento.", "social_title": "Redes Sociales", "services_title": "Servicios", "legal_title": "Información Legal", "legal": { "contact": "Contacto", "terms": "Términos y Condiciones" }, "services": { "about": "Nosotros", "benefits": "Beneficios", "testimonials": "Testimonios", "faq": "Preguntas", "tutorials": "Tutorial", "contact": "Contacto", "download": "Descargar" }, "copyright": "Todos los derechos reservados © 2025 GlassGo" },
                 "terms": { "title": "Términos y Condiciones", "section1": { "title": "1. Aceptación de los Términos", "content": "Al acceder y utilizar los servicios de GlassGo, usted acepta estos términos y condiciones en su totalidad. Es importante que lea detenidamente este documento antes de utilizar nuestros servicios." }, "section2": { "title": "2. Descripción del Servicio", "content": "GlassGo proporciona un software para la gestión y trazabilidad del transporte de vidrio. Nuestros servicios incluyen, pero no se limitan a:", "list": [ "Seguimiento en tiempo real de envíos", "Monitoreo de impactos y vibraciones", "Optimización de rutas", "Generación de reportes y análisis", "Gestión de flotas y conductores" ] }, "section3": { "title": "3. Responsabilidades del Usuario", "content": "El usuario se compromete a:", "list": [ "Proporcionar información precisa y actualizada", "Mantener la confidencialidad de sus credenciales", "Utilizar el servicio de manera ética y legal", "Reportar cualquier uso no autorizado de su cuenta", "Cumplir con todas las leyes y regulaciones aplicables" ] }, "section4": { "title": "4. Privacidad y Protección de Datos", "content": "Nos comprometemos a proteger su privacidad y datos personales. Nuestras prácticas incluyen:", "list": [ "Encriptación de datos sensibles", "Almacenamiento seguro en servidores protegidos", "Acceso restringido a personal autorizado", "Cumplimiento con regulaciones de protección de datos" ] }, "section5": { "title": "5. Limitación de Responsabilidad", "content": "GlassGo no será responsable por:", "list": [ "Pérdidas no atribuibles directamente a nuestro incumplimiento", "Daños indirectos o consecuentes", "Interrupciones temporales del servicio por mantenimiento", "Fuerza mayor o circunstancias fuera de nuestro control" ] }, "section6": { "title": "6. Tarifas y Pagos", "content": "Los detalles sobre precios, facturación y pagos se especifican en nuestros planes de suscripción. Nos reservamos el derecho de modificar las tarifas con previo aviso." }, "section7": { "title": "7. Cancelación y Terminación", "content": "Puede cancelar su suscripción en cualquier momento. Nos reservamos el derecho de suspender o terminar el servicio en caso de violación de estos términos." }, "legal_notice": "La información proporcionada en este documento es solo para fines informativos y no constituye asesoramiento legal. Para cualquier consulta específica, le recomendamos consultar con un profesional legal.", "accept_button": "Aceptar Términos y Condiciones" },
+                "auth": { "signin": { "title": "Iniciar Sesión - GlassGo", "heading": "Sign in", "userPlaceholder": "Usuario", "passwordPlaceholder": "Contraseña", "distributor": "Distribuidor", "transport": "Empresas de transporte", "business": "Dueños de negocios", "remember": "Recordar usuario", "forgot": "¿Olvidaste tu contraseña?", "submit": "Sign in", "orSignIn": "O inicia sesión con", "noAccount": "¿No tienes una cuenta?", "signUpLink": "Regístrate" }, "signup": { "title": "Registrarse - GlassGo", "heading": "Sign up", "userPlaceholder": "Usuario", "emailPlaceholder": "Correo electrónico", "passwordPlaceholder": "Contraseña", "distributor": "Distribuidor", "transport": "Empresas de transporte", "business": "Dueños de negocios", "remember": "Recordar usuario", "forgot": "¿Olvidaste tu contraseña?", "submit": "Sign UP", "orSignIn": "O regístrate con", "successTitle": "Registro Exitoso, ¡Bienvenido!", "continue": "Continuar", "hasAccount": "¿Ya tienes una cuenta?", "signInLink": "Inicia sesión" }, "forgot": { "title": "¿Olvidaste tu contraseña? - GlassGo", "heading": "Forgot your password?", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "emailPlaceholder": "Correo electrónico", "submit": "SEND", "backToSignin": "Volver a iniciar sesión" } },
                 "language": { "current": "Español", "selector_label": "Seleccionar idioma" }
             },
             'en': {
@@ -50,7 +51,7 @@ class I18n {
                 "navigation": { "home": "Home", "about": "About Us", "benefits": "Benefits", "testimonials": "Testimonials", "faq": "FAQ", "tutorials": "Tutorials", "contact": "Contact", "login": "Log In", "register": "Sign Up" },
                 "hero": { "title": "Software designed for traceability and<br>loss prevention in glass transportation", "subtitle": "From route optimization to impact detection, everything in one platform", "btn_pricing": "View plans and pricing", "btn_demo": "Get a demo →" },
                 "about": { "title": "About Us", "subtitle": "We are RPG, a technological platform that transforms the transportation of liquors in glass containers with real-time traceability, route optimization and smart sensors for safe and efficient deliveries", "cards": { "help": { "title": "How We Help", "description": "We reduce losses, optimize routes and guarantee transparency in every shipment with accessible technology that ensures safe and efficient deliveries." }, "value": { "title": "Value Proposition", "description": "We offer a unique solution that combines traceability, breakage prevention and accessibility, so that every bottle arrives safely at its destination and your business gains efficiency and confidence." }, "mission": { "title": "Mission and Vision", "description": "We revolutionize glass transportation with accessible, safe and efficient technology, creating a new standard without breakage and with total transparency." } } },
-                "team": { "title": "Development Team", "subtitle": "Meet the team building GlassGo with technology, passion and a client-focused mindset.", "members": { "1": { "name": "Jarod Céspedes", "career": "Software Engineer" }, "2": { "name": "Guillermo Howard", "career": "Software Engineer" }, "3": { "name": "David Vivar", "career": "Software Engineer" }, "4": { "name": "Dylan Guillen", "career": "Software Engineer" } }, "about_video": { "title": "About the Team", "subtitle": "Discover how we work, our engineering practices and our culture.", "badge": "Coming soon", "cta": "Video available soon", "note": "We're preparing the video for our YouTube channel. Come back soon!" } },
+                "team": { "title": "Development Team", "subtitle": "Meet the team building GlassGo with technology, passion and a client-focused mindset.", "members": { "1": { "name": "Abraam Acosta", "career": "Software Engineer" }, "2": { "name": "Guillermo Howard", "career": "Software Engineer" }, "3": { "name": "David Vivar", "career": "Software Engineer" }, "4": { "name": "Dylan Guillen", "career": "Software Engineer" } }, "about_video": { "title": "About the Team", "subtitle": "Discover how we work, our engineering practices and our culture.", "badge": "Coming soon", "cta": "Video available soon", "note": "We're preparing the video for our YouTube channel. Come back soon!" } },
                 "product": { "about_video": { "title": "About the Product", "subtitle": "Discover how our platform works and how it can transform your logistics.", "badge": "Coming soon", "cta": "Video available soon", "note": "We're preparing the video for our YouTube channel. Come back soon!" } },
                 "benefits": { "title": "Benefits", "subtitle": "Take control of your logistics with technology that protects your merchandise, improves efficiency and guarantees transparency in every shipment", "transport": { "title": "Truck Transportation Companies", "items": { "tracking": "Real-time tracking of every vehicle", "alerts": "Immediate alerts for vibration or impact on cargo", "optimization": "Route optimization to reduce time and costs", "reduction": "Reduction of losses due to breakage in transit", "reports": "Automatic fleet performance reports" } }, "distributors": { "title": "Liquor Distributors / Business Owners", "items": { "safe_delivery": "Safer deliveries with lower breakage rates", "transparency": "Transparency in every shipment with digital traceability", "clear_reports": "Access to clear reports on every delivery", "inventory_control": "In-transit inventory control", "cost_reduction": "Reduction of logistics costs due to losses or returns" } } },
                 "testimonials": { "title": "Testimonials", "nav": { "prev": "Previous testimonial", "next": "Next testimonial" }, "items": { "maria": { "name": "María T.", "role": "Distributor", "text": "Complete traceability gave us peace of mind. Our customers receive their orders intact and we fully trust every delivery." }, "carlos": { "name": "Carlos M.", "role": "Transport Manager", "text": "Before, we lost too much time and money due to inefficient routes and breakage on the road. With this platform we now control everything in real time and our costs were significantly reduced." }, "jorge": { "name": "Jorge R.", "role": "Business Owner", "text": "Now I know exactly where my merchandise is and when it arrives. I have reduced losses and gain more confidence with my suppliers." } } },
@@ -59,13 +60,14 @@ class I18n {
                 "contact": { "title": "Contact Us", "description": "Write to us and together we will boost your business towards transport without breakage and with total control", "form": { "subtitle": "Your opinion and your needs are the starting point to create effective solutions.", "name": "Name", "email": "Email", "phone": "Phone", "message": "Message", "submit": "Send", "sending": "Sending...", "success": "Message sent successfully!<br>We will contact you soon.", "errors": { "name": "Name must have at least 2 characters", "email": "Please enter a valid email", "phone": "Please enter a valid phone number", "message": "Message must have at least 10 characters", "general": "Error sending message. Please try again.", "title": "Please correct the following errors:" } } },
                 "footer": { "description": "These are the characteristics that differentiate our solution: accessible technology, focused on your business and ready to boost your growth.", "social_title": "Social Networks", "services_title": "Services", "legal_title": "Legal Information", "legal": { "contact": "Contact", "terms": "Terms and Conditions" }, "services": { "about": "About Us", "benefits": "Benefits", "testimonials": "Testimonials", "faq": "FAQ", "tutorials": "Tutorials", "contact": "Contact", "download": "Download" }, "copyright": "All rights reserved © 2025 GlassGo" },
                 "terms": { "title": "Terms and Conditions", "section1": { "title": "1. Acceptance of Terms", "content": "By accessing and using GlassGo services, you accept these terms and conditions in their entirety. It is important that you read this document carefully before using our services." }, "section2": { "title": "2. Service Description", "content": "GlassGo provides software for glass transport management and traceability. Our services include, but are not limited to:", "list": [ "Real-time shipment tracking", "Impact and vibration monitoring", "Route optimization", "Report generation and analysis", "Fleet and driver management" ] }, "section3": { "title": "3. User Responsibilities", "content": "The user agrees to:", "list": [ "Provide accurate and updated information", "Maintain the confidentiality of their credentials", "Use the service ethically and legally", "Report any unauthorized use of their account", "Comply with all applicable laws and regulations" ] }, "section4": { "title": "4. Privacy and Data Protection", "content": "We are committed to protecting your privacy and personal data. Our practices include:", "list": [ "Sensitive data encryption", "Secure storage on protected servers", "Restricted access to authorized personnel", "Compliance with data protection regulations" ] }, "section5": { "title": "5. Limitation of Liability", "content": "GlassGo will not be responsible for:", "list": [ "Losses not directly attributable to our non-compliance", "Indirect or consequential damages", "Temporary service interruptions for maintenance", "Force majeure or circumstances beyond our control" ] }, "section6": { "title": "6. Fees and Payments", "content": "Details about pricing, billing and payments are specified in our subscription plans. We reserve the right to modify rates with prior notice." }, "section7": { "title": "7. Cancellation and Termination", "content": "You can cancel your subscription at any time. We reserve the right to suspend or terminate service in case of violation of these terms." }, "legal_notice": "The information provided in this document is for informational purposes only and does not constitute legal advice. For any specific consultation, we recommend consulting with a legal professional.", "accept_button": "Accept Terms and Conditions" },
+                "auth": { "signin": { "title": "Sign in - GlassGo", "heading": "Sign in", "userPlaceholder": "User", "passwordPlaceholder": "Password", "distributor": "Distributor", "transport": "Transport companies", "business": "Business owners", "remember": "Remember Username", "forgot": "Forgot your password?", "submit": "Sign in", "orSignIn": "Or sign in with", "noAccount": "Don't have an account?", "signUpLink": "Sign up" }, "signup": { "title": "Sign up - GlassGo", "heading": "Sign up", "userPlaceholder": "User", "emailPlaceholder": "E-mail", "passwordPlaceholder": "Password", "distributor": "Distributor", "transport": "Transport companies", "business": "Business owners", "remember": "Remember Username", "forgot": "Forgot your password?", "submit": "Sign UP", "orSignIn": "Or sign in with", "successTitle": "Successful Registration, Welcome!", "continue": "Continue", "hasAccount": "Already have an account?", "signInLink": "Sign in" }, "forgot": { "title": "Forgot your password? - GlassGo", "heading": "Forgot your password?", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "emailPlaceholder": "E-mail", "submit": "SEND", "backToSignin": "Back to Sign in" } },
                 "language": { "current": "English", "selector_label": "Select language" }
             }
         };
-        
+
         this.init();
     }
-    
+
     /**
      * @method init
      * @description Initializes the i18n system by detecting language, loading translations, and setting up UI
@@ -79,17 +81,13 @@ class I18n {
             this.applyTranslations();
             this.setupLanguageSelector();
             this.updatePageMeta();
-            
-            setTimeout(() => {
-                this.applyTranslations();
-            }, 500);
-            
+
         } catch (error) {
             await this.loadTranslations(this.fallbackLanguage);
             this.applyTranslations();
         }
     }
-    
+
     /**
      * @method detectLanguage
      * @description Detects user's preferred language from localStorage, browser settings, or falls back to default
@@ -100,15 +98,15 @@ class I18n {
         if (savedLanguage && this.supportedLanguages.includes(savedLanguage)) {
             return savedLanguage;
         }
-        
+
         const browserLanguage = navigator.language.slice(0, 2);
         if (this.supportedLanguages.includes(browserLanguage)) {
             return browserLanguage;
         }
-        
+
         return this.fallbackLanguage;
     }
-    
+
     /**
      * @method loadTranslations
      * @description Loads translation data from JSON file or falls back to inline translations
@@ -119,7 +117,7 @@ class I18n {
     async loadTranslations(language) {
         try {
             const response = await fetch(`assets/i18n/${language}.json`);
-            
+
             if (response.ok) {
                 this.translations = await response.json();
                 this.currentLanguage = language;
@@ -128,7 +126,7 @@ class I18n {
             } else {
                 throw new Error(`HTTP ${response.status}`);
             }
-            
+
         } catch (error) {
             if (this.inlineTranslations && this.inlineTranslations[language]) {
                 this.translations = this.inlineTranslations[language];
@@ -143,7 +141,7 @@ class I18n {
             }
         }
     }
-    
+
     /**
      * @method t
      * @description Retrieves a translation string using dot notation key
@@ -155,7 +153,7 @@ class I18n {
         try {
             const keys = key.split('.');
             let translation = this.translations;
-            
+
             for (const k of keys) {
                 if (translation && typeof translation === 'object' && k in translation) {
                     translation = translation[k];
@@ -163,18 +161,18 @@ class I18n {
                     return key;
                 }
             }
-            
+
             if (typeof translation === 'string') {
                 return this.interpolate(translation, params);
             }
-            
+
             return key;
-            
+
         } catch (error) {
             return key;
         }
     }
-    
+
     /**
      * @method interpolate
      * @description Replaces placeholders in text with provided parameter values
@@ -186,12 +184,12 @@ class I18n {
         if (!params || Object.keys(params).length === 0) {
             return text;
         }
-        
+
         return text.replace(/\{\{(\w+)\}\}/g, (match, key) => {
             return params[key] !== undefined ? params[key] : match;
         });
     }
-    
+
     /**
      * @method applyTranslations
      * @description Applies translations to all DOM elements with data-i18n attribute
@@ -201,18 +199,18 @@ class I18n {
         if (!this.translations || Object.keys(this.translations).length === 0) {
             return;
         }
-        
+
         this.showLoadingIndicator();
         document.body.classList.add('i18n-transitioning');
-        
+
         const elements = document.querySelectorAll('[data-i18n]');
-        
+
         elements.forEach(element => {
             const key = element.getAttribute('data-i18n');
             if (!key) return;
-            
+
             const translation = this.t(key);
-            
+
             if (translation !== key) {
                 if (element.hasAttribute('data-i18n-html')) {
                     element.innerHTML = translation;
@@ -225,57 +223,70 @@ class I18n {
                 }
             }
         });
-        
+
         this.updateLanguageSelector();
         this.updatePageMeta();
-        
+
         setTimeout(() => {
             document.body.classList.remove('i18n-transitioning');
             this.hideLoadingIndicator();
         }, 200);
     }
-    
+
     /**
      * @method setupLanguageSelector
      * @description Initializes the language selector dropdown with event listeners
      * @returns {void}
      */
     setupLanguageSelector() {
-        const languageSelector = document.querySelector('.language-selector');
-        if (!languageSelector) {
+        // Support both selectors: main page and auth pages
+        const selectors = document.querySelectorAll('.language-selector, .language-selector-auth');
+
+        if (selectors.length === 0) {
             return;
         }
-        
-        this.createLanguageDropdown(languageSelector);
-        
-        const newSelector = languageSelector.cloneNode(true);
-        languageSelector.parentNode.replaceChild(newSelector, languageSelector);
-        
-        const selector = document.querySelector('.language-selector');
-        this.createLanguageDropdown(selector);
-        
-        selector.addEventListener('click', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            this.toggleLanguageDropdown();
-        });
-        
-        document.addEventListener('click', (e) => {
-            if (!selector.contains(e.target)) {
-                this.closeLanguageDropdown();
+
+        // Remove existing click listener to prevent duplicates
+        if (this.documentClickListener) {
+            document.removeEventListener('click', this.documentClickListener);
+        }
+
+        selectors.forEach(selector => {
+            this.createLanguageDropdown(selector);
+
+            // Remove old listeners by cloning only if needed
+            if (!selector.hasAttribute('data-i18n-initialized')) {
+                selector.setAttribute('data-i18n-initialized', 'true');
+
+                selector.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.toggleLanguageDropdown(selector);
+                });
+
+                selector.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.toggleLanguageDropdown(selector);
+                    } else if (e.key === 'Escape') {
+                        this.closeLanguageDropdown(selector);
+                    }
+                });
             }
         });
-        
-        selector.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                this.toggleLanguageDropdown();
-            } else if (e.key === 'Escape') {
-                this.closeLanguageDropdown();
-            }
-        });
+
+        // Store the listener so we can remove it later
+        this.documentClickListener = (e) => {
+            selectors.forEach(selector => {
+                if (!selector.contains(e.target)) {
+                    this.closeLanguageDropdown(selector);
+                }
+            });
+        };
+
+        document.addEventListener('click', this.documentClickListener);
     }
-    
+
     /**
      * @method createLanguageDropdown
      * @description Creates the HTML structure for the language selector dropdown
@@ -284,7 +295,7 @@ class I18n {
      */
     createLanguageDropdown(container) {
         const currentLangInfo = this.getLanguageInfo(this.currentLanguage);
-        
+
         container.innerHTML = `
             <div class="language-current">
                 <span class="language-text">${currentLangInfo.name}</span>
@@ -292,9 +303,9 @@ class I18n {
             </div>
             <div class="language-dropdown">
                 ${this.supportedLanguages.map(lang => {
-                    const info = this.getLanguageInfo(lang);
-                    const isActive = lang === this.currentLanguage;
-                    return `
+            const info = this.getLanguageInfo(lang);
+            const isActive = lang === this.currentLanguage;
+            return `
                         <div class="language-option ${isActive ? 'active' : ''}" 
                              data-language="${lang}"
                              role="button"
@@ -304,10 +315,10 @@ class I18n {
                             ${isActive ? '<span class="checkmark">✓</span>' : ''}
                         </div>
                     `;
-                }).join('')}
+        }).join('')}
             </div>
         `;
-        
+
         const options = container.querySelectorAll('.language-option');
         options.forEach(option => {
             option.addEventListener('click', (e) => {
@@ -316,7 +327,7 @@ class I18n {
                 const language = option.getAttribute('data-language');
                 this.changeLanguage(language);
             });
-            
+
             option.addEventListener('keydown', (e) => {
                 if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
@@ -326,7 +337,7 @@ class I18n {
             });
         });
     }
-    
+
     /**
      * @method getLanguageInfo
      * @description Returns display name and flag code for a given language
@@ -338,46 +349,58 @@ class I18n {
             'es': { name: 'Español', flag: 'ES' },
             'en': { name: 'English', flag: 'EN' }
         };
-        
+
         return languageMap[language] || languageMap['es'];
     }
-    
+
     /**
      * @method toggleLanguageDropdown
      * @description Toggles the visibility of the language selector dropdown
+     * @param {HTMLElement} selector - The language selector element
      * @returns {void}
      */
-    toggleLanguageDropdown() {
-        const selector = document.querySelector('.language-selector');
+    toggleLanguageDropdown(selector) {
         if (selector) {
+            // Close all other selectors
+            const allSelectors = document.querySelectorAll('.language-selector, .language-selector-auth');
+            allSelectors.forEach(s => {
+                if (s !== selector) {
+                    s.classList.remove('active');
+                }
+            });
             selector.classList.toggle('active');
         }
     }
-    
+
     /**
      * @method closeLanguageDropdown
      * @description Closes the language selector dropdown
+     * @param {HTMLElement} selector - The language selector element (optional, closes all if not provided)
      * @returns {void}
      */
-    closeLanguageDropdown() {
-        const selector = document.querySelector('.language-selector');
+    closeLanguageDropdown(selector = null) {
         if (selector) {
             selector.classList.remove('active');
+        } else {
+            const allSelectors = document.querySelectorAll('.language-selector, .language-selector-auth');
+            allSelectors.forEach(s => s.classList.remove('active'));
         }
     }
-    
+
     /**
      * @method updateLanguageSelector
      * @description Updates the language selector display with current language
      * @returns {void}
      */
     updateLanguageSelector() {
-        const languageSelector = document.querySelector('.language-selector');
-        if (languageSelector) {
-            this.createLanguageDropdown(languageSelector);
-        }
+        const languageSelectors = document.querySelectorAll('.language-selector, .language-selector-auth');
+        languageSelectors.forEach(selector => {
+            if (selector) {
+                this.createLanguageDropdown(selector);
+            }
+        });
     }
-    
+
     /**
      * @method changeLanguage
      * @description Changes the current language and updates all translations
@@ -394,25 +417,25 @@ class I18n {
         try {
             this.closeLanguageDropdown();
             this.showLoadingIndicator();
-            
+
             await this.loadTranslations(language);
             this.applyTranslations();
-            this.setupLanguageSelector();
+            this.updateLanguageSelector();
             this.hideLoadingIndicator();
-            
+
             const event = new CustomEvent('languageChanged', {
-                detail: { 
+                detail: {
                     oldLanguage: this.currentLanguage,
-                    newLanguage: language 
+                    newLanguage: language
                 }
             });
             document.dispatchEvent(event);
-            
+
         } catch (error) {
             this.hideLoadingIndicator();
         }
     }
-    
+
     /**
      * @method updatePageMeta
      * @description Updates page metadata (title, lang attribute, meta description)
@@ -423,9 +446,9 @@ class I18n {
         if (title && title !== 'meta.title') {
             document.title = title;
         }
-        
+
         document.documentElement.lang = this.currentLanguage;
-        
+
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
             const description = this.t('meta.description');
@@ -434,7 +457,7 @@ class I18n {
             }
         }
     }
-    
+
     /**
      * @method showLoadingIndicator
      * @description Displays a loading indicator during language changes
@@ -455,7 +478,7 @@ class I18n {
         }
         loader.style.display = 'flex';
     }
-    
+
     /**
      * @method hideLoadingIndicator
      * @description Hides the loading indicator
@@ -467,7 +490,7 @@ class I18n {
             loader.style.display = 'none';
         }
     }
-    
+
     /**
      * @method getCurrentLanguage
      * @description Returns the current active language code
@@ -476,7 +499,7 @@ class I18n {
     getCurrentLanguage() {
         return this.currentLanguage;
     }
-    
+
     /**
      * @method getSupportedLanguages
      * @description Returns array of all supported language codes
@@ -485,7 +508,7 @@ class I18n {
     getSupportedLanguages() {
         return this.supportedLanguages;
     }
-    
+
     /**
      * @method isLanguageSupported
      * @description Checks if a given language code is supported
@@ -497,18 +520,21 @@ class I18n {
     }
 }
 
+// Initialize i18n only once when DOM is ready
 let i18n;
 
-i18n = new I18n();
-window.i18n = i18n;
-
-document.addEventListener('DOMContentLoaded', () => {
-    if (!window.i18n || !window.i18n.translations || Object.keys(window.i18n.translations).length === 0) {
+if (document.readyState === 'loading') {
+    // DOM is still loading, wait for DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', () => {
+        if (!window.i18n) {
+            i18n = new I18n();
+            window.i18n = i18n;
+        }
+    });
+} else {
+    // DOM is already loaded
+    if (!window.i18n) {
         i18n = new I18n();
         window.i18n = i18n;
-    } else {
-        i18n.applyTranslations();
     }
-});
-
-window.i18n = i18n;
+}

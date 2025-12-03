@@ -48,30 +48,31 @@
     "title": "Equipo de desarrollo",
     "subtitle": "Conoce al equipo que construye GlassGo con tecnología, pasión y una mentalidad centrada en el cliente.",
     "members": {
-       "1": {
-        "name": "Ever Carlos",
+      "1": {
+        "name": "Abraam Acosta",
         "career": "Ingeniero de Software"
       },
       "2": {
         "name": "Guillermo Howard",
-        "career": "Ingeniero de Software"
+        "career": "Software Engineer"
       },
       "3": {
         "name": "David Vivar",
-        "career": "Ingeniero de Software"
+        "career": "Software Engineer"
       },
       "4": {
         "name": "Dylan Guillen",
-        "career": "Ingeniero de Software"
+        "career": "Software Engineer"
       },
       "5": {
-        "name": "Gerardo Palacin",
-        "career": "Ingeniero de Software"
+        "name": "Gerardo Palacín",
+        "career": "Software Engineer"
       },
       "6": {
-        "name": "Abraam Acosta",
-        "career": "Ingeniero de Software"
+        "name": "Ever Lavado",
+        "career": "Software Engineer"
       }
+
     },
     "about_video": {
       "title": "Sobre el Equipo",
@@ -209,6 +210,49 @@
       }
     }
   },
+  "auth": {
+    "signin": {
+      "title": "Iniciar Sesión - GlassGo",
+      "heading": "Sign in",
+      "userPlaceholder": "Usuario",
+      "passwordPlaceholder": "Contraseña",
+      "distributor": "Distribuidor",
+      "transport": "Empresas de transporte",
+      "business": "Dueños de negocios",
+      "remember": "Recordar usuario",
+      "forgot": "¿Olvidaste tu contraseña?",
+      "submit": "Sign in",
+      "orSignIn": "O inicia sesión con",
+      "noAccount": "¿No tienes una cuenta?",
+      "signUpLink": "Regístrate"
+    },
+    "signup": {
+      "title": "Registrarse - GlassGo",
+      "heading": "Sign up",
+      "userPlaceholder": "Usuario",
+      "emailPlaceholder": "Correo electrónico",
+      "passwordPlaceholder": "Contraseña",
+      "distributor": "Distribuidor",
+      "transport": "Empresas de transporte",
+      "business": "Dueños de negocios",
+      "remember": "Recordar usuario",
+      "forgot": "¿Olvidaste tu contraseña?",
+      "submit": "Sign UP",
+      "orSignIn": "O regístrate con",
+      "successTitle": "Registro Exitoso, ¡Bienvenido!",
+      "continue": "Continuar",
+      "hasAccount": "¿Ya tienes una cuenta?",
+      "signInLink": "Inicia sesión"
+    },
+    "forgot": {
+      "title": "¿Olvidaste tu contraseña? - GlassGo",
+      "heading": "Forgot your password?",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "emailPlaceholder": "Correo electrónico",
+      "submit": "SEND",
+      "backToSignin": "Volver a iniciar sesión"
+    }
+  },
   "footer": {
     "description": "Estas son las características que diferencian nuestra solución: tecnología accesible, enfocada en tu negocio y lista para impulsar tu crecimiento.",
     "social_title": "Redes Sociales",
@@ -294,5 +338,98 @@
   "language": {
     "current": "Español",
     "selector_label": "Seleccionar idioma"
+  },
+  "dashboard": {
+    "nav": {
+      "home": "Inicio",
+      "createOrder": "Crear orden",
+      "tracking": "Rastreo",
+      "inventory": "Inventario",
+      "calendar": "Calendario",
+      "report": "Reportes",
+      "history": "Historial",
+      "claims": "Reclamos",
+      "settings": "Configuración",
+      "logout": "Cerrar sesión"
+    },
+    "home": {
+      "title": "Inicio",
+      "welcome": "¡Hola! Aquí está tu resumen comercial de hoy.",
+      "stats": {
+        "activeOrders": "Pedidos activos",
+        "stockAvailable": "Stock disponible",
+        "estimatedTime": "Tiempo estimado",
+        "lossesAvoided": "Pérdidas evitadas"
+      },
+      "tracking": {
+        "title": "Rastreo y Pedidos recientes",
+        "inTransit": "En tránsito",
+        "trackingNumber": "Número de rastreo",
+        "orderLeaving": "El pedido está saliendo hacia",
+        "seeMore": "Ver más"
+      },
+      "inventory": {
+        "title": "Inventario",
+        "status": "Estado",
+        "orderLeaving": "El pedido está saliendo hacia",
+        "seeMore": "Ver más"
+      },
+      "reports": {
+        "title": "Reportes",
+        "viewReports": "Ver\nreportes",
+        "seeMore": "Ver más"
+      },
+      "calendar": {
+        "title": "Calendario",
+        "orderNumber": "Orden número",
+        "willArrive": "Tu pedido llegará este día.",
+        "seeMore": "Ver más"
+      },
+      "events": {
+        "title": "Eventos",
+        "newOrders": "Nuevos pedidos",
+        "newPath": "Nueva ruta",
+        "people": "mil personas"
+      },
+      "reportWidget": {
+        "title": "Reporte",
+        "subtitle": "Últimos 30 días de actividad",
+        "newVisits": "Nuevas visitas",
+        "newFollowers": "Nuevos seguidores",
+        "shareConnection": "compartir conexión con..."
+      }
+    },
+    "tracking": {
+      "title": "Rastreo",
+      "subtitle": "Rastrea las rutas de tus camiones con total trazabilidad y transparencia.",
+      "search": "Ingrese el número de rastreo del pedido",
+      "inTransit": "En tránsito",
+      "trackingNumber": "Número de rastreo",
+      "orderLeaving": "El pedido está saliendo hacia"
+    },
+    "createOrder": {
+      "title": "Crear Orden",
+      "subtitle": "Crea una nueva orden de envío de manera rápida y sencilla."
+    },
+    "inventory": {
+      "title": "Inventario",
+      "subtitle": "Gestiona tu inventario de productos y controla el stock."
+    },
+    "calendar": {
+      "title": "Calendario",
+      "subtitle": "Visualiza y programa las entregas de tus pedidos."
+    },
+    "report": {
+      "title": "Reportes",
+      "subtitle": "Analiza el rendimiento, costos y eficiencia en reportes fáciles de entender."
+    },
+    "history": {
+      "title": "Historial",
+      "subtitle": "Revisa el historial completo de tus operaciones."
+    },
+    "claims": {
+      "title": "Reclamos",
+      "subtitle": "Gestiona y da seguimiento a los reclamos."
+    }
   }
 }
