@@ -239,10 +239,12 @@ The application supports three user types:
 
 ## 👥 Development Team
 
-- **Ever Carlos** - Software Engineer
+- **Abraam Acosta** - Software Engineer
 - **Guillermo Howard** - Software Engineer
 - **David Vivar** - Software Engineer
 - **Dylan Guillen** - Software Engineer
+- **Gerardo Palacin** - Software Engineer
+- **Ever Lavado** - Software Engineer
 
 ## 📄 License
 
